@@ -1,9 +1,9 @@
 Package: universityrankingafrica
-Title: What the Package Does (One Line, Title Case)
+Title: University Ranking Africa
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+     person("Sophia", "Skorik", , "sskorik@ethz.ch", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-4755-1649"))
 Description: What the package does (one paragraph).
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
     license
@@ -13,3 +13,5 @@ RoxygenNote: 7.2.3
 Depends: 
     R (>= 2.10)
 LazyData: true
+Language: en-GB
+Date: 2023-10-30
