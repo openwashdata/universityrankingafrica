@@ -12,6 +12,7 @@ library(stringr)
 #read data
 ura_raw <- read_excel("./data-raw/African_Universities.xlsx")
 
+
 # tidy data ---------------------------------------------------------------
 
 universityrankingafrica <- ura_raw %>%
