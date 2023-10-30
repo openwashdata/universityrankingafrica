@@ -1,0 +1,34 @@
+fileName,variableName,description,unitText,variableType
+Universities,University,Name of the University,,string
+Universities,Country,Country where the University is located,,drop-down from List of African countries
+Universities,City,City where the University is located,,string
+Universities,ROR entry correct,"Is the entry on the ror.org-website corresponding to the University correct? In most ""n""-cases, the stated website is incorrect",,y / n
+Universities,URL,Official website of the University,,URL
+Universities,Website Secure,Does the website use https? Is there no security related pop-up upon opening the website?,,y / n
+Universities,Website up to date,Are news articles on the website up to date OR is the copyright date of the website the current year?,,y / n
+Universities,Website Function,"Good: navigating through the website is smooth, no OR very few dead or redundant links. Medium: some dead links within the webpage, some placeholders (""lorem ipsum"") still visible, some blank or empty pages. Poor: Navigating through the website is very difficult. Defunct: the official link of the university's website is no longer hosted, or is otherwise inaccessible. Note: Does NOT indicate how much information can be found on the website.",,good / medium / poor / defunct
+Universities,Website Language,Default language of the landing site,,string
+Universities,Colonial Power at Independence,"The colonial Power from which the country gained independence, if it ever was colonized or became independent.",,string
+Universities,Rank Africa,"The rank of the University in Africa, according to https://www.webometrics.info/en/Ranking_africa",,int
+Universities,Rank World,"The rank of the University in the World, according to https://www.webometrics.info/en/Ranking_africa",,int
+Universities,Impact Rank,"The impact rank of the University, according to https://www.webometrics.info/en/Ranking_africa",,int
+Universities,Openness Rank,"The openness rank of the University, according to https://www.webometrics.info/en/Ranking_africa",,int
+Universities,Excellence Rank,"The excellence rank of the University, according to https://www.webometrics.info/en/Ranking_africa",,int
+Universities,Academic System Used,"Which academic system is used at the University: American (Undergraduate, Graduate, Doctorate) or French (LMD: Licence, Master, Doctorat)",,American / French
+Universities,Number of Engineering Courses,The number of different undergraduate engineering courses the University offers.,,int
+Universities,Years of Study,"Stated duration of an undergraduate engineering degree. If the University doesn't offer engineering degrees, the duration of another undergraduate degree is indicated.",,int
+Universities,Online Application,"Is there a possibility to apply for the University online? If no explicit method is stated to send the application online, it's considered as ""no""",,y / n
+Universities,International Students,Does the University give special information to interested foreign students on how to enter?,,y / n
+Universities,Yearly Fee,"Required yearly tuition fee for a local student to complete a year of an undergraduate engineering degree at the University. If the University doesn't offer engineering degrees, the general tuition fee is indicated",,int
+Universities,Masters Programme,Does the University offer Master's programmes? (NOT only engineering),,y / n
+Universities,Primary Teaching Language,Language in which the majority of teaching takes place,,string
+Universities,Online Payment,"Is there a possibility to pay University fees online? (either banking information, instructions or a direct link)",,y / n
+Universities,Number of Students,"If stated on the website, the number of students studying at the University",,int
+Universities,Access Date,Date the University website was accessed,,date (dd.mm.yyyy)
+Universities,Remarks,Personal notes on the University,,string
+Countries,Countries,Name of the Country,,string
+Countries,Region,African Region where the Country is located,,string
+Countries,Best Uni Rank,Rank Africa of the best University of the country,,int
+Countries,GDP,"GDP of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-$ in 2017 prices (accounting for differences in cost of living)",,int
+Countries,GDP per Capita,"GDP per Capita of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-$ in 2017 prices (accounting for differences in cost of living)",,int
+Countries,HDI,"Human Development Index of the country in 2021. Source: ourworldindata.org, United Nations Development Programme (UNDP). Variable time span: 1990-2021. Higher number means better developped.",,double between 0 and 1
