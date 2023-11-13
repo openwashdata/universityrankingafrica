@@ -2,7 +2,7 @@
 #' University Ranking Africa
 #'
 #'
-#' Database of African universities and observations of their rankings, type of courses, application process, part of international students and website funtions.
+#' Database of African Top Universities and observations of their rankings, type of courses, application process, part of international students and website funtions.
 #'
 #' @format A tibble with 141 rows and 27 variables:
 
