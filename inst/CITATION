@@ -1,10 +1,10 @@
 
 bibentry(bibtype = "Misc",
-         key = "skoriksigrist",
+         key = "sigristskorik",
          title = "universityrankingafrica: University Ranking Africa",
          author = c(person(given = "Samuel",
                            family = "Sigrist"),
-                           person(given = "Sophia",
+                    person(given = "Sophia",
                            family = "Skorik")),
          year = "2023",
          abstract = "What the package does (one paragraph).",

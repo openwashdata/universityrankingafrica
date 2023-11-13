@@ -1,9 +1,0 @@
-
-bibentry(bibtype = "Misc",
-         key = "skorik",
-         title = "universityrankingafrica: University Ranking Africa",
-         author = person(given = "Sophia",
-                         family = "Skorik"),
-         year = "2023",
-         abstract = "What the package does (one paragraph).",
-         version = "0.0.0.9000")
