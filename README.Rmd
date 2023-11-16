@@ -9,10 +9,15 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%"
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
 )
 
 library(tidyverse)
+library(epoxy)
 library(universityrankingafrica)
 library(sf)
 library(rnaturalearth)
@@ -23,17 +28,17 @@ library(rnaturalearth)
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of universityrankingafrica is to ...
+This packages combines data collected as part of an MSc. Thesis Project. The project was supported by the Global Health Engineering group at ETH Zurich, Switzerland.
 
-```{r}
-data("universityrankingafrica")
+```{r, echo=FALSE}
 top_ranked_per_country <- universityrankingafrica |> 
   select(University, Country, `Rank Africa`) |> 
   group_by(Country) |> 
   filter(`Rank Africa` == min(`Rank Africa`)) |> 
   ungroup()
 world <- ne_countries(scale = "medium", returnclass = "sf")
-africa_map <- left_join(world, top_ranked_per_country, by = c("name" = "Country")) |>  
+africa_map <- left_join(world, 
+                        top_ranked_per_country, by = c("name" = "Country")) |>  
   filter(continent == "Africa")
 ggplot() +
   theme_void() +
@@ -56,14 +61,220 @@ You can install the development version of universityrankingafrica from [GitHub]
 # install.packages("devtools")
 devtools::install_github("openwashdata/universityrankingafrica")
 ```
+Alternatively, you can download the dataset as a CSV or XLSX
+file from the table below.
+
+```{r, echo=FALSE}
+
+extdata_path <- "https://github.com/openwashdata/universityrankingafrica/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  mutate(file_name = str_remove(file_name, ".rda")) |> 
+  rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## MSc. Thesis Project
+### Description
+### Research Question
+### Data
+The package provides access to one data set.
+```{r}
+library(universityrankingafrica)
+```
+
+```{epoxy}
+The `universityrankingafrica` data set has {ncol(universityrankingafrica)} variables and {nrow(universityrankingafrica)} observations. For an overview of the variable names, see the following table.  
+
+```
+
+```{r, eval=FALSE}
+universityrankingafrica
+```
+
+```{r, echo=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>  
+  dplyr::select(variable_name:description) |> 
+  knitr::kable()
+```
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+The provided code snippet showcases how to use the universityrankingafrica package in R to prepare a visual map highlighting the countries with the highest-ranked universities in Africa.
 
-```{r example}
+The primary aim is to utilize the dataset's "Rank Africa" column, which contains university rankings, to extract and display the distribution of top-ranked universities across African countries. The goal is to explore various aggregation methods to rank countries based on their universities' rankings.
+
+### Method 1
+Our first try is to select the highest ranked university in each country and use only those to rank the countries. 
+
+```{r}
 library(universityrankingafrica)
 library(tidyverse)
-## basic example code
+library(sf)
+library(rnaturalearth)
+
+
+top_ranked_per_country <- universityrankingafrica |> 
+  select(University, Country, `Rank Africa`) |> 
+  group_by(Country) |> 
+  filter(`Rank Africa` == min(`Rank Africa`)) |> 
+  ungroup()
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+africa_map_1 <- left_join(world, 
+                        top_ranked_per_country, by = c("name" = "Country")) |>  
+  filter(continent == "Africa")
+
+plot <- ggplot() +
+  theme_void() +
+  geom_sf(data = africa_map, aes(fill = `Rank Africa`), color = "white", lwd = 0) +
+  scale_fill_gradientn(name = "Rank Africa", 
+                       trans = "log",
+                       labels = scales::label_number(accuracy = 1),
+                       colors = c("#2E8B57","#9DBF9E", "#FCB97D", "#A84268"),
+                       na.value = "grey80") +
+  labs(title = "Top-Ranked Universities in Africa", ) +
+  theme(legend.position = c(0, 0.4), legend.direction = "horizontal",
+        plot.title = element_text(size = 20, hjust = 3, vjust = 0))
+
+plot
+ggsave("plot/africa_map_1.png", plot, width = 10, height = 8, dpi = 300)
+
 ```
 
+### Method 2
+In this approach, we aim to expand the scope by considering the top two universities in each country. The process involves selecting the two highest-ranked universities within every country and then calculating the median of their rankings. This way, we obtain a broader perspective on educational excellence within each nation. This method allows for a more comprehensive evaluation compared to Method 1, providing a nuanced understanding of the educational landscape across Africa.
+
+
+```{r}
+library(universityrankingafrica)
+library(tidyverse)
+library(sf)
+library(rnaturalearth)
+
+#we only modify the way we're ranking the countries
+top_2_ranked_per_country <- universityrankingafrica |> 
+  select(University, Country, `Rank Africa`) |> 
+  group_by(Country) |> 
+  slice_head(n = 2) |> 
+  ungroup() |> 
+  group_by(Country) |> 
+  summarize(Avg_Rank = median(`Rank Africa`)) |> 
+  ungroup()
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+africa_map_2 <- left_join(world, 
+                        top_2_ranked_per_country, by = c("name" = "Country")) |>  
+  filter(continent == "Africa")
+
+plot <- ggplot() +
+  theme_void() +
+  geom_sf(data = africa_map_2, aes(fill = `Avg_Rank`), color = "white", lwd = 0) +
+  scale_fill_gradientn(name = "Rank Africa", 
+                       trans = "log",
+                       labels = scales::label_number(accuracy = 1),
+                       colors = c("#2E8B57","#9DBF9E", "#FCB97D", "#A84268"),
+                       na.value = "grey80") +
+  labs(title = "Top-Ranked Universities in Africa", ) +
+  theme(legend.position = c(0, 0.4), legend.direction = "horizontal",
+        plot.title = element_text(size = 20, hjust = 3, vjust = 0))
+
+
+plot
+ggsave("plot/africa_map_2.png", plot, width = 10, height = 8, dpi = 300)
+```
+
+### Method 3
+
+Method 3 takes a more inclusive stance by considering all the universities within each country. Instead of focusing solely on the top-performing institutions, this approach involves aggregating the rankings of all universities in a country and computing their median. This method offers a holistic view of the educational standards within each country. It provides a comprehensive ranking that considers the collective performance of universities, which may offer insights differing from the more selective approaches of Method 1 and Method 2.
+
+
+```{r}
+library(universityrankingafrica)
+library(tidyverse)
+library(sf)
+library(rnaturalearth)
+
+#we only modify the way we're ranking the countries
+all_ranked_per_country <- universityrankingafrica |> 
+  select(University, Country, `Rank Africa`) |> 
+  group_by(Country) |> 
+  summarize(Avg_Rank = median(`Rank Africa`), .groups = "drop")
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+
+africa_map_3 <- left_join(world, 
+                        all_ranked_per_country, by = c("name" = "Country")) |>  
+  filter(continent == "Africa")
+
+plot <- ggplot() +
+  theme_void() +
+  geom_sf(data = africa_map_3, aes(fill = `Avg_Rank`), color = "white", lwd = 0) +
+  scale_fill_gradientn(name = "Rank Africa", 
+                       trans = "log",
+                       labels = scales::label_number(accuracy = 1),
+                       colors = c("#2E8B57","#9DBF9E", "#FCB97D", "#A84268"),
+                       na.value = "grey80") +
+  labs(title = "Top-Ranked Universities in Africa", ) +
+  theme(legend.position = c(0, 0.4), legend.direction = "horizontal",
+        plot.title = element_text(size = 20, hjust = 3, vjust = 0),
+        plot.margin = margin(0, 0, 0, 0, unit = "cm") )
+
+plot
+ggsave("plot/africa_map_3.png", plot, width = 10, height = 8, dpi = 300)
+
+```
+
+### Conclusion
+
+**Method 1** - Top-Ranked Universities per Country:
+
+Focuses on the single highest-ranked university in each country, offering a clear snapshot of top performers but potentially overlooking the broader educational landscape.
+
+**Method 2** - Top Two Universities per Country:
+
+Considers the top two universities, providing a slightly broader perspective while maintaining selectivity. Offers a nuanced view without overwhelming details.
+
+**Method 3** - All Universities per Country:
+
+Takes an inclusive approach by considering all universities, offering a comprehensive but potentially diluted view of educational standards.
+
+Each method has its merits: Method 1 offers clarity, Method 2 balances selectivity and breadth, while Method 3 provides inclusivity but may sacrifice precision. Choosing the appropriate method depends on the specific objectives and the desired depth of understanding for evaluating educational excellence across African countries.
+
+```{r, echo=FALSE}
+library(gridExtra)
+library(png)
+library(grid)
+
+# Read the image files
+img1 <- readPNG("~/gitrepos/universityrankingafrica/plot/africa_map_1.png")
+img2 <- readPNG("~/gitrepos/universityrankingafrica/plot/africa_map_2.png")
+img3 <- readPNG("~/gitrepos/universityrankingafrica/plot/africa_map_3.png")
+
+# Create plot objects from the images
+grid.arrange(rasterGrob(img1, interpolate=TRUE),
+             rasterGrob(img2, interpolate=TRUE),
+             rasterGrob(img3, interpolate=TRUE),
+             nrow = 1)
+```
+
+## License
+
+Data are available as 
+[CC-BY](https://github.com/openwashdata/universityrankingafrica/LICENSE.md).
+
+## Citation
+
+To cite this package, please use:
+
+```{r}
+citation("universityrankingafrica")
+```
