@@ -8,7 +8,7 @@
 
 This packages combines data collected as part of an MSc. Thesis Project.
 The goal of this project was to build an openly accessible database with
-data from the top ranked universities of each African country.The
+data from the top ranked universities of each African country. The
 project was supported by the Global Health Engineering group at ETH
 Zurich, Switzerland.
 
@@ -108,10 +108,12 @@ universityrankingafrica
 
 ## Example
 
-### Idea 1
+### 1) Mapping Countries with the Best-Ranked Universities
 
-Our first try is to select the highest ranked university in each country
-and use only those to rank the countries.
+The code below demonstrates how to create a map in R that highlights
+countries hosting the top-ranked universities. This method involves
+picking the best university in each country and associating its rank
+with that specific country.
 
 ``` r
 library(universityrankingafrica)
@@ -153,7 +155,7 @@ plot
 ggsave("plot/africa_map_1.png", plot, width = 10, height = 8, dpi = 300)
 ```
 
-### Idea 2
+### 2) Exploring Colonial’s Legacy on African University Ranking
 
 This analysis investigates whether a correlation exists between the
 colonial power that previously governed African nations and their
