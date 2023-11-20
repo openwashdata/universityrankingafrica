@@ -160,7 +160,7 @@ ggsave("plot/africa_map_1.png", plot, width = 10, height = 8, dpi = 300)
 
 ### Idea 2
 
-We would like to see if the Colonial Power at Independence has a correlation with the university ranking. 
+This analysis investigates whether a correlation exists between the colonial power that previously governed African nations and their current university rankings.  
 
 ```{r}
 library(universityrankingafrica)
