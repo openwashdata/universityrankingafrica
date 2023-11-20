@@ -108,18 +108,7 @@ universityrankingafrica
 
 ## Example
 
-The provided code snippet showcases how to use the
-universityrankingafrica package in R to prepare a visual map
-highlighting the countries with the highest-ranked universities in
-Africa.
-
-The primary aim is to utilize the dataset’s “Rank Africa” column, which
-contains university rankings, to extract and display the distribution of
-top-ranked universities across African countries. The goal is to explore
-various aggregation methods to rank countries based on their
-universities’ rankings.
-
-### Method 1
+### Idea 1
 
 Our first try is to select the highest ranked university in each country
 and use only those to rank the countries.
@@ -139,7 +128,7 @@ top_ranked_per_country <- universityrankingafrica |>
 
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
-africa_map_1 <- left_join(world, 
+africa_map <- left_join(world, 
                         top_ranked_per_country, by = c("name" = "Country")) |>  
   filter(continent == "Africa")
 
@@ -164,137 +153,71 @@ plot
 ggsave("plot/africa_map_1.png", plot, width = 10, height = 8, dpi = 300)
 ```
 
-### Method 2
+### Idea 2
 
-In this approach, we aim to expand the scope by considering the top two
-universities in each country. The process involves selecting the two
-highest-ranked universities within every country and then calculating
-the median of their rankings. This way, we obtain a broader perspective
-on educational excellence within each nation. This method allows for a
-more comprehensive evaluation compared to Method 1, providing a nuanced
-understanding of the educational landscape across Africa.
+We would like to see if the Colonial Power at Independence has a
+correlation with the university ranking.
 
 ``` r
 library(universityrankingafrica)
 library(tidyverse)
-library(sf)
-library(rnaturalearth)
 
-#we only modify the way we're ranking the countries
-top_2_ranked_per_country <- universityrankingafrica |> 
-  select(University, Country, `Rank Africa`) |> 
-  group_by(Country) |> 
-  slice_head(n = 2) |> 
-  ungroup() |> 
-  group_by(Country) |> 
-  summarize(Avg_Rank = median(`Rank Africa`)) |> 
-  ungroup()
+data <- universityrankingafrica |> 
+  filter(`Colonial Power at Independence` %in% c("United Kingdom", "France", "Belgium", "Italy", "Portugal"))
 
-world <- ne_countries(scale = "medium", returnclass = "sf")
-
-africa_map_2 <- left_join(world, 
-                        top_2_ranked_per_country, by = c("name" = "Country")) |>  
-  filter(continent == "Africa")
-
-plot <- ggplot() +
-  theme_void() +
-  geom_sf(data = africa_map_2, aes(fill = `Avg_Rank`), color = "white", lwd = 0) +
-  scale_fill_gradientn(name = "Rank Africa", 
-                       trans = "log",
-                       labels = scales::label_number(accuracy = 1),
-                       colors = c("#2E8B57","#9DBF9E", "#FCB97D", "#A84268"),
-                       na.value = "grey80") +
-  labs(title = "Top-Ranked Universities in Africa", ) +
-  theme(legend.position = c(0, 0.4), legend.direction = "horizontal",
-        plot.title = element_text(size = 20, hjust = 3, vjust = 0))
-
-
-plot
+# Create a scatter plot
+ggplot(data, aes(x = `Colonial Power at Independence`, y = `Rank Africa`)) +
+  geom_point() +
+  labs(x = "Colonial Power at Independence", y = "Africa Rank") +
+  ggtitle("University Ranking in Africa vs Colonial Power at Independence")
 ```
 
 <img src="man/figures/README-unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;" />
 
 ``` r
-ggsave("plot/africa_map_2.png", plot, width = 10, height = 8, dpi = 300)
+
+# Perform linear regression
+model <- lm(`Rank Africa` ~ `Colonial Power at Independence`, data = data)
+print(summary(model))
+#> 
+#> Call:
+#> lm(formula = `Rank Africa` ~ `Colonial Power at Independence`, 
+#>     data = data)
+#> 
+#> Residuals:
+#>    Min     1Q Median     3Q    Max 
+#> -628.1 -318.9 -168.4  148.3 1756.4 
+#> 
+#> Coefficients:
+#>                                                Estimate Std. Error t value
+#> (Intercept)                                      449.44     167.62   2.681
+#> `Colonial Power at Independence`France           200.63     181.54   1.105
+#> `Colonial Power at Independence`Italy           -301.78     335.23  -0.900
+#> `Colonial Power at Independence`Portugal          80.33     237.05   0.339
+#> `Colonial Power at Independence`United Kingdom  -116.83     180.81  -0.646
+#>                                                Pr(>|t|)   
+#> (Intercept)                                     0.00834 **
+#> `Colonial Power at Independence`France          0.27125   
+#> `Colonial Power at Independence`Italy           0.36977   
+#> `Colonial Power at Independence`Portugal        0.73527   
+#> `Colonial Power at Independence`United Kingdom  0.51941   
+#> ---
+#> Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+#> 
+#> Residual standard error: 502.9 on 123 degrees of freedom
+#> Multiple R-squared:  0.0896, Adjusted R-squared:  0.05999 
+#> F-statistic: 3.026 on 4 and 123 DF,  p-value: 0.02025
 ```
 
-### Method 3
+#### Interpretation
 
-Method 3 takes a more inclusive stance by considering all the
-universities within each country. Instead of focusing solely on the
-top-performing institutions, this approach involves aggregating the
-rankings of all universities in a country and computing their median.
-This method offers a holistic view of the educational standards within
-each country. It provides a comprehensive ranking that considers the
-collective performance of universities, which may offer insights
-differing from the more selective approaches of Method 1 and Method 2.
-
-``` r
-library(universityrankingafrica)
-library(tidyverse)
-library(sf)
-library(rnaturalearth)
-
-#we only modify the way we're ranking the countries
-all_ranked_per_country <- universityrankingafrica |> 
-  select(University, Country, `Rank Africa`) |> 
-  group_by(Country) |> 
-  summarize(Avg_Rank = median(`Rank Africa`), .groups = "drop")
-
-world <- ne_countries(scale = "medium", returnclass = "sf")
-
-africa_map_3 <- left_join(world, 
-                        all_ranked_per_country, by = c("name" = "Country")) |>  
-  filter(continent == "Africa")
-
-plot <- ggplot() +
-  theme_void() +
-  geom_sf(data = africa_map_3, aes(fill = `Avg_Rank`), color = "white", lwd = 0) +
-  scale_fill_gradientn(name = "Rank Africa", 
-                       trans = "log",
-                       labels = scales::label_number(accuracy = 1),
-                       colors = c("#2E8B57","#9DBF9E", "#FCB97D", "#A84268"),
-                       na.value = "grey80") +
-  labs(title = "Top-Ranked Universities in Africa", ) +
-  theme(legend.position = c(0, 0.4), legend.direction = "horizontal",
-        plot.title = element_text(size = 20, hjust = 3, vjust = 0),
-        plot.margin = margin(0, 0, 0, 0, unit = "cm") )
-
-plot
-```
-
-<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;" />
-
-``` r
-ggsave("plot/africa_map_3.png", plot, width = 10, height = 8, dpi = 300)
-```
-
-### Conclusion
-
-**Method 1** - Top-Ranked Universities per Country:
-
-Focuses on the single highest-ranked university in each country,
-offering a clear snapshot of top performers but potentially overlooking
-the broader educational landscape.
-
-**Method 2** - Top Two Universities per Country:
-
-Considers the top two universities, providing a slightly broader
-perspective while maintaining selectivity. Offers a nuanced view without
-overwhelming details.
-
-**Method 3** - All Universities per Country:
-
-Takes an inclusive approach by considering all universities, offering a
-comprehensive but potentially diluted view of educational standards.
-
-Each method has its merits: Method 1 offers clarity, Method 2 balances
-selectivity and breadth, while Method 3 provides inclusivity but may
-sacrifice precision. Choosing the appropriate method depends on the
-specific objectives and the desired depth of understanding for
-evaluating educational excellence across African countries.
-
-<img src="man/figures/README-unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" />
+The model doesn’t provide strong evidence that the specific colonial
+powers (France, Italy, Portugal, United Kingdom) significantly predict
+the university rankings in Africa based on their p-values which are
+greater than conventional thresholds like 0.05.. The low R-squared value
+indicates that the model might not explain much of the variability in
+the university rankings, suggesting that factors beyond colonial power
+might influence these rankings significantly.
 
 ## License
 
