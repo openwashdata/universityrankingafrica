@@ -7,7 +7,9 @@
 <!-- badges: end -->
 
 This packages combines data collected as part of an MSc. Thesis Project.
-The project was supported by the Global Health Engineering group at ETH
+The goal of this project was to build an openly accessible database with
+data from the top ranked universities of each African country.The
+project was supported by the Global Health Engineering group at ETH
 Zurich, Switzerland.
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" style="display: block; margin: auto;" />
@@ -31,11 +33,28 @@ the table below.
 
 ## MSc. Thesis Project
 
-### Description
+### Description and Research Question
 
-### Research Question
+For research at GHE about African universities and their performance on
+an international scale, a comprehensive database was needed. Such a
+database would also prove useful to gain a broad picture of the
+institutions present on the continent, and potential new opportunities
+for academic collaborations. The first research question that can be
+tackled after the data collection is “Which attributes of an African
+university correlate with its performance in an international ranking?”.
 
 ### Data
+
+For the data collection at hand, it was decided to only consider the 3
+(at most) highest ranked universities of each African country. The
+gathered data offers interesting insights into the African academic
+landscape, mostly through the process of combing through more than 140
+websites in the search for information. Generally, this data collection
+process gets more and more difficult the further down the ranking
+performance goes: Navigation is more confusing and useful information
+scarcer. Assisting institutions in improving the quality of their web
+contents could be one possible avenue for cooperation with African
+universities in the future.
 
 The package provides access to one data set.
 
