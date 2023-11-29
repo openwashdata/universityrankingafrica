@@ -1,3 +1,11 @@
+#
+#' University Ranking Africa
+#'
+#'
+#' Database of African Top Universities and observations of their rankings, type of courses, application process, part of international students and website funtions.
+#'
+#' @format A tibble with 141 rows and 26 variables:
+
 #' \describe{
 #'   \item{university}{Name of the University}
 #'   \item{country}{Country where the University is located}
@@ -25,10 +33,4 @@
 #'   \item{number_of_students}{If stated on the website, the number of students studying at the University}
 #'   \item{access_date}{Date the University website was accessed}
 #'   \item{remarks}{Personal notes on the University}
-#'   \item{countries}{Name of the Country}
-#'   \item{region}{African Region where the Country is located}
-#'   \item{best_uni_rank}{Rank Africa of the best University of the country}
-#'   \item{gdp}{GDP of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-$ in 2017 prices (accounting for differences in cost of living)}
-#'   \item{gdp_per_capita}{GDP per Capita of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-$ in 2017 prices (accounting for differences in cost of living)}
-#'   \item{hdi}{Human Development Index of the country in 2021. Source: ourworldindata.org, United Nations Development Programme (UNDP). Variable time span: 1990-2021. Higher number means better developped.}
 #' }
