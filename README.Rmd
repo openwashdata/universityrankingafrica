@@ -28,7 +28,7 @@ library(rnaturalearth)
 <!-- badges: start -->
 <!-- badges: end -->
 
-This packages combines data collected as part of an MSc. Thesis Project. The goal of this project was to build an openly accessible database with data from the top ranked universities of each African country. The project was supported by the Global Health Engineering group at ETH Zurich, Switzerland.
+This packages combines data collected as part of an MSc. Thesis Project. The goal of this project was to build an openly accessible database with data from the top ranked universities of each African country. The project is supported by the Global Health Engineering group at ETH Zurich, Switzerland.
 
 ```{r, echo=FALSE}
 top_ranked_per_country <- african_countries |> 
@@ -106,8 +106,9 @@ library(universityrankingafrica)
 ```
 
 ```{epoxy}
-The `universityrankingafrica` data set has {ncol(ranking)} variables and {nrow(ranking)} observations. For an overview of the variable names, see the following table.  
+The `ranking` data set has {ncol(ranking)} variables and {nrow(ranking)} observations. For an overview of the variable names, see the following table.  
 
+  
 ```
 
 ```{r, eval=FALSE}

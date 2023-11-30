@@ -9,7 +9,7 @@
 This packages combines data collected as part of an MSc. Thesis Project.
 The goal of this project was to build an openly accessible database with
 data from the top ranked universities of each African country. The
-project was supported by the Global Health Engineering group at ETH
+project is supported by the Global Health Engineering group at ETH
 Zurich, Switzerland.
 
 <img src="man/figures/README-unnamed-chunk-2-1.png" width="100%" style="display: block; margin: auto;" />
