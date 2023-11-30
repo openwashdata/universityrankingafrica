@@ -72,12 +72,11 @@ The package provides access to two data sets.
 library(universityrankingafrica)
 ```
 
-The `universityrankingafrica` data set has 26 variables and 141
-observations. For an overview of the variable names, see the following
-table.
+The `ranking` data set has 26 variables and 141 observations. For an
+overview of the variable names, see the following table.
 
 ``` r
-ranking
+ranking 
 ```
 
 | variable_name          | variable_type                            | description                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -245,7 +244,7 @@ citation("universityrankingafrica")
 #>     title = {universityrankingafrica: University Ranking Africa},
 #>     author = {Samuel Sigrist and Sophia Skorik},
 #>     year = {2023},
-#>     abstract = {What the package does (one paragraph).},
+#>     abstract = {Data from institutional and national levels was combined into a dataset to provide a comprehensive characterization of the top ranked Universities of every African country. This was done to demonstrate the correlation of certain attributes with the academic ranking performance. The dataset also highlights the difficulties of accessing data from many African Universities online.},
 #>     version = {0.0.0.9000},
 #>   }
 ```

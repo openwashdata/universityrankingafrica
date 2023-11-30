@@ -112,7 +112,7 @@ The `ranking` data set has {ncol(ranking)} variables and {nrow(ranking)} observa
 ```
 
 ```{r, eval=FALSE}
-ranking
+ranking 
 ```
 
 ```{r, echo=FALSE}
