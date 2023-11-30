@@ -27,10 +27,10 @@ devtools::install_github("openwashdata/universityrankingafrica")
 Alternatively, you can download the individual dataset as a CSV or XLSX
 file from the table below.
 
-| dataset           | CSV                                                                                                        | XLSX                                                                                                         |
-|:------------------|:-----------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------------------------------------------------|
-| ranking           | [Download CSV](https://github.com/openwashdata/universityrankingafrica/inst/extdata/ranking.csv)           | [Download XLSX](https://github.com/openwashdata/universityrankingafrica/inst/extdata/ranking.xlsx)           |
-| african_countries | [Download CSV](https://github.com/openwashdata/universityrankingafrica/inst/extdata/african_countries.csv) | [Download XLSX](https://github.com/openwashdata/universityrankingafrica/inst/extdata/african_countries.xlsx) |
+| dataset           | CSV                                                                                                                 | XLSX                                                                                                                  |
+|:------------------|:--------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------|
+| ranking           | [Download CSV](https://github.com/openwashdata/universityrankingafrica/raw/main/inst/extdata/ranking.csv)           | [Download XLSX](https://github.com/openwashdata/universityrankingafrica/raw/main/inst/extdata/ranking.xlsx)           |
+| african_countries | [Download CSV](https://github.com/openwashdata/universityrankingafrica/raw/main/inst/extdata/african_countries.csv) | [Download XLSX](https://github.com/openwashdata/universityrankingafrica/raw/main/inst/extdata/african_countries.xlsx) |
 
 ## MSc. Thesis Project
 
@@ -142,38 +142,33 @@ library(sf)
 library(rnaturalearth)
 
 
-top_ranked_per_country <- ranking |> 
-  select(university, country, rank_africa) |> 
-  group_by(country) |> 
-  filter(rank_africa == min(rank_africa)) |> 
-  ungroup()
+top_ranked_per_country <- african_countries |> 
+  select(countries, best_uni_rank) 
 
 world <- ne_countries(scale = "medium", returnclass = "sf")
-
 africa_map <- left_join(world, 
-                        top_ranked_per_country, by = c("name" = "country")) |>  
+                        top_ranked_per_country, by = c("name_long" = "countries")) |>  
   filter(continent == "Africa")
 
-plot <- ggplot() +
+ggplot() +
   theme_void() +
-  geom_sf(data = africa_map, aes(fill = rank_africa), color = "white", lwd = 0) +
-  scale_fill_gradientn(name = "Rank Africa", 
+  geom_sf(data = africa_map, aes(fill = best_uni_rank), color = "white", lwd = 0) +
+  scale_fill_gradientn(name = "Rank Africa  (out of 2'064)", 
                        trans = "log",
                        labels = scales::label_number(accuracy = 1),
                        colors = c("#2E8B57","#9DBF9E", "#FCB97D", "#A84268"),
                        na.value = "grey80") +
-  labs(title = "Top-Ranked Universities in Africa", ) +
-  theme(legend.position = c(0, 0.4), legend.direction = "horizontal",
-        plot.title = element_text(size = 20, hjust = 3, vjust = 0))
-
-plot
+  labs(title = "Top-Ranked Universities in Africa",
+       subtitle = "Comparison of the Highest-Ranked University in each African Country",
+       caption = "Source: Ranking Web of Universities (https://www.webometrics.info/en/Africa)") +
+  theme(legend.position = c(-0.1, 0.3), legend.direction = "horizontal",
+        plot.title = element_text(size = 20, hjust = 2, vjust = 0),
+        plot.subtitle = element_text(size = 10, hjust = 2, vjust = 0.5),
+        plot.caption = element_text(size = 10, color = "darkgray", hjust = -0.6)) +
+  coord_sf(ylim = c(-40, 40))
 ```
 
 <img src="man/figures/README-unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;" />
-
-``` r
-ggsave("plot/africa_map_1.png", plot, width = 10, height = 8, dpi = 300)
-```
 
 ### 2) Exploring Colonial’s Legacy on African University Ranking
 
@@ -184,6 +179,7 @@ current university rankings.
 ``` r
 library(universityrankingafrica)
 library(tidyverse)
+library(broom)
 
 data <- ranking |> 
   filter(colonial_power %in% c("United Kingdom", "France", "Belgium", "Italy", "Portugal"))
@@ -201,28 +197,18 @@ ggplot(data, aes(x = colonial_power, y = rank_africa)) +
 
 # Perform linear regression
 model <- lm(rank_africa ~ colonial_power, data = data)
-print(summary(model))
-#> 
-#> Call:
-#> lm(formula = rank_africa ~ colonial_power, data = data)
-#> 
-#> Residuals:
-#>    Min     1Q Median     3Q    Max 
-#> -628.1 -318.9 -168.4  148.3 1756.4 
-#> 
-#> Coefficients:
-#>                              Estimate Std. Error t value Pr(>|t|)   
-#> (Intercept)                    449.44     167.62   2.681  0.00834 **
-#> colonial_powerFrance           200.63     181.54   1.105  0.27125   
-#> colonial_powerItaly           -301.78     335.23  -0.900  0.36977   
-#> colonial_powerPortugal          80.33     237.05   0.339  0.73527   
-#> colonial_powerUnited Kingdom  -116.83     180.81  -0.646  0.51941   
-#> ---
-#> Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-#> 
-#> Residual standard error: 502.9 on 123 degrees of freedom
-#> Multiple R-squared:  0.0896, Adjusted R-squared:  0.05999 
-#> F-statistic: 3.026 on 4 and 123 DF,  p-value: 0.02025
+print(tidy(model))
+#> # A tibble: 5 × 5
+#>   term                         estimate std.error statistic p.value
+#>   <chr>                           <dbl>     <dbl>     <dbl>   <dbl>
+#> 1 (Intercept)                     449.       168.     2.68  0.00834
+#> 2 colonial_powerFrance            201.       182.     1.11  0.271  
+#> 3 colonial_powerItaly            -302.       335.    -0.900 0.370  
+#> 4 colonial_powerPortugal           80.3      237.     0.339 0.735  
+#> 5 colonial_powerUnited Kingdom   -117.       181.    -0.646 0.519
+
+print(summary(model)$r.squared)
+#> [1] 0.0895955
 ```
 
 #### Interpretation
