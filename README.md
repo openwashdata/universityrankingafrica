@@ -153,17 +153,18 @@ africa_map <- left_join(world,
 ggplot() +
   theme_void() +
   geom_sf(data = africa_map, aes(fill = best_uni_rank), color = "white", lwd = 0) +
-  scale_fill_gradientn(name = "Rank Africa  (out of 2'064)", 
+  scale_fill_gradientn(name =  paste("Rank Africa", "\n(out of 2'064)"), 
                        trans = "log",
                        labels = scales::label_number(accuracy = 1),
                        colors = c("#2E8B57","#9DBF9E", "#FCB97D", "#A84268"),
-                       na.value = "grey80") +
+                       na.value = "grey80",
+                       guide = guide_colorbar(title.position = "top", title.vjust = 1.5)) +
   labs(title = "Top-Ranked Universities in Africa",
        subtitle = "Comparison of the Highest-Ranked University in each African Country",
        caption = "Source: Ranking Web of Universities (https://www.webometrics.info/en/Africa)") +
   theme(legend.position = c(-0.1, 0.3), legend.direction = "horizontal",
-        plot.title = element_text(size = 20, hjust = 2, vjust = 0),
-        plot.subtitle = element_text(size = 10, hjust = 2, vjust = 0.5),
+        plot.title = element_text(size = 20, hjust = 0, vjust = 0),
+        plot.subtitle = element_text(size = 10, hjust = 0, vjust = 0.5),
         plot.caption = element_text(size = 10, color = "darkgray", hjust = -0.6)) +
   coord_sf(ylim = c(-40, 40))
 ```
