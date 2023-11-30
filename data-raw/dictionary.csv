@@ -9,8 +9,8 @@ data,ranking.rda,website_up_to_date,y / n,Are news articles on the website up to
 data,ranking.rda,website_function,good / medium / poor / defunct,"Good: navigating through the website is smooth, no OR very few dead or redundant links. Medium: some dead links within the webpage, some placeholders (""lorem ipsum"") still visible, some blank or empty pages. Poor: Navigating through the website is very difficult. Defunct: the official link of the university's website is no longer hosted, or is otherwise inaccessible. Note: Does NOT indicate how much information can be found on the website."
 data,ranking.rda,website_language,string,Default language of the landing site
 data,ranking.rda,colonial_power,string,"The colonial Power from which the country gained independence, if it ever was colonized or became independent."
-data,ranking.rda,rank_africa,int,"The rank of the University in Africa, according to https://www.webometrics.info/en/Ranking_africa"
-data,ranking.rda,rank_world,int,"The rank of the University in the World, according to https://www.webometrics.info/en/Ranking_africa"
+data,ranking.rda,rank_africa,int,"The rank of the University in Africa (2'064 universities), according to https://www.webometrics.info/en/Ranking_africa"
+data,ranking.rda,rank_world,int,"The rank of the University in the World (11'997 universities), according to https://www.webometrics.info/en/Ranking_africa"
 data,ranking.rda,impact_rank,int,"The impact rank of the University, according to https://www.webometrics.info/en/Ranking_africa"
 data,ranking.rda,openness_rank,int,"The openness rank of the University, according to https://www.webometrics.info/en/Ranking_africa"
 data,ranking.rda,excellence_rank,int,"The excellence rank of the University, according to https://www.webometrics.info/en/Ranking_africa"

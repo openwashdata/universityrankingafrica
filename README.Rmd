@@ -31,18 +31,18 @@ library(rnaturalearth)
 This packages combines data collected as part of an MSc. Thesis Project. The goal of this project was to build an openly accessible database with data from the top ranked universities of each African country. The project was supported by the Global Health Engineering group at ETH Zurich, Switzerland.
 
 ```{r, echo=FALSE}
-top_ranked_per_country <- universityrankingafrica |> 
-  select(University, Country, `Rank Africa`) |> 
-  group_by(Country) |> 
-  filter(`Rank Africa` == min(`Rank Africa`)) |> 
+top_ranked_per_country <- ranking |> 
+  select(university, country, rank_africa) |> 
+  group_by(country) |> 
+  filter(rank_africa == min(rank_africa)) |> 
   ungroup()
 world <- ne_countries(scale = "medium", returnclass = "sf")
 africa_map <- left_join(world, 
-                        top_ranked_per_country, by = c("name" = "Country")) |>  
+                        top_ranked_per_country, by = c("name" = "country")) |>  
   filter(continent == "Africa")
 ggplot() +
   theme_void() +
-  geom_sf(data = africa_map, aes(fill = `Rank Africa`), color = "white", lwd = 0) +
+  geom_sf(data = africa_map, aes(fill = rank_africa), color = "white", lwd = 0) +
   scale_fill_gradientn(name = "Rank Africa", 
                        trans = "log",
                        labels = scales::label_number(accuracy = 1),
@@ -61,7 +61,7 @@ You can install the development version of universityrankingafrica from [GitHub]
 # install.packages("devtools")
 devtools::install_github("openwashdata/universityrankingafrica")
 ```
-Alternatively, you can download the dataset as a CSV or XLSX
+Alternatively, you can download the individual dataset as a CSV or XLSX
 file from the table below.
 
 ```{r, echo=FALSE}
@@ -81,42 +81,56 @@ read_csv("data-raw/dictionary.csv") |>
 ```
 
 ## MSc. Thesis Project
-### Description and Research Question
-For research at GHE about African universities and their performance on an international scale,
-a comprehensive database was needed. Such a database would also prove useful to gain a broad picture of
-the institutions present on the continent, and potential new opportunities for academic collaborations.
-The first research question that can be tackled after the data collection is “Which attributes of an African
-university correlate with its performance in an international ranking?”.
+### Description
+Data from institutional and national levels was combined into a dataset to provide a comprehensive characterization of the top ranked Universities of every African country. This was done to demonstrate the correlation of certain attributes with the academic ranking performance. The dataset also highlights the difficulties of accessing data from many African Universities online.
+
+### Research Question
+Which attributes of an African university correlate with its performance in an international ranking?
 
 ### Data
-For the data collection at hand, it was decided to only consider the 3 (at most) highest ranked
-universities of each African country. The gathered data offers interesting insights into the African academic landscape, mostly
+The data was collected between April and June 2023 using only the official websites of the Universities. The ranking data originates from the [Ranking Web of Universities](https://www.webometrics.info/en/Africa). It's worth noting that while the World Ranking comprises 11'997 universities, the African Ranking accounts for 2'064 universities. For the data collection at hand, it was decided to only consider the 3 (at most) highest ranked universities of each African country. The gathered data offers interesting insights into the African academic landscape, mostly
 through the process of combing through more than 140 websites in the search for information.
 Generally, this data collection process gets more and more difficult the further down the ranking
 performance goes: Navigation is more confusing and useful information scarcer. Assisting institutions
 in improving the quality of their web contents could be one possible avenue for cooperation with
 African universities in the future.
 
-The package provides access to one data set.
+The package provides access to two data sets.
 ```{r}
 library(universityrankingafrica)
 ```
 
 ```{epoxy}
-The `universityrankingafrica` data set has {ncol(universityrankingafrica)} variables and {nrow(universityrankingafrica)} observations. For an overview of the variable names, see the following table.  
+The `universityrankingafrica` data set has {ncol(ranking)} variables and {nrow(ranking)} observations. For an overview of the variable names, see the following table.  
 
 ```
 
 ```{r, eval=FALSE}
-universityrankingafrica
+ranking
 ```
 
 ```{r, echo=FALSE}
 readr::read_csv("data-raw/dictionary.csv") |>  
+  dplyr::filter(file_name == "ranking.rda") |> 
   dplyr::select(variable_name:description) |> 
   knitr::kable()
 ```
 
+```{epoxy}
+The `african_countries` data set has {ncol(african_countries)} variables and {nrow(african_countries)} observations. For an overview of the variable names, see the following table.  
+
+```
+
+```{r, eval=FALSE}
+african_countries
+```
+
+```{r, echo=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>  
+  dplyr::filter(file_name == "african_countries.rda") |> 
+  dplyr::select(variable_name:description) |> 
+  knitr::kable()
+```
 ## Example
 
 ### 1) Mapping Countries with the Best-Ranked Universities
@@ -130,21 +144,21 @@ library(sf)
 library(rnaturalearth)
 
 
-top_ranked_per_country <- universityrankingafrica |> 
-  select(University, Country, `Rank Africa`) |> 
-  group_by(Country) |> 
-  filter(`Rank Africa` == min(`Rank Africa`)) |> 
+top_ranked_per_country <- ranking |> 
+  select(university, country, rank_africa) |> 
+  group_by(country) |> 
+  filter(rank_africa == min(rank_africa)) |> 
   ungroup()
 
 world <- ne_countries(scale = "medium", returnclass = "sf")
 
 africa_map <- left_join(world, 
-                        top_ranked_per_country, by = c("name" = "Country")) |>  
+                        top_ranked_per_country, by = c("name" = "country")) |>  
   filter(continent == "Africa")
 
 plot <- ggplot() +
   theme_void() +
-  geom_sf(data = africa_map, aes(fill = `Rank Africa`), color = "white", lwd = 0) +
+  geom_sf(data = africa_map, aes(fill = rank_africa), color = "white", lwd = 0) +
   scale_fill_gradientn(name = "Rank Africa", 
                        trans = "log",
                        labels = scales::label_number(accuracy = 1),
@@ -159,6 +173,7 @@ ggsave("plot/africa_map_1.png", plot, width = 10, height = 8, dpi = 300)
 
 ```
 
+
 ### 2) Exploring Colonial's Legacy on African University Ranking
 
 This analysis investigates whether a correlation exists between the colonial power that previously governed African nations and their current university rankings.  
@@ -167,17 +182,17 @@ This analysis investigates whether a correlation exists between the colonial pow
 library(universityrankingafrica)
 library(tidyverse)
 
-data <- universityrankingafrica |> 
-  filter(`Colonial Power at Independence` %in% c("United Kingdom", "France", "Belgium", "Italy", "Portugal"))
+data <- ranking |> 
+  filter(colonial_power %in% c("United Kingdom", "France", "Belgium", "Italy", "Portugal"))
 
 # Create a scatter plot
-ggplot(data, aes(x = `Colonial Power at Independence`, y = `Rank Africa`)) +
+ggplot(data, aes(x = colonial_power, y = rank_africa)) +
   geom_point() +
   labs(x = "Colonial Power at Independence", y = "Africa Rank") +
   ggtitle("University Ranking in Africa vs Colonial Power at Independence")
 
 # Perform linear regression
-model <- lm(`Rank Africa` ~ `Colonial Power at Independence`, data = data)
+model <- lm(rank_africa ~ colonial_power, data = data)
 print(summary(model))
 ```
 #### Interpretation

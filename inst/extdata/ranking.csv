@@ -1,0 +1,142 @@
+university,country,city,ror_entry_correct,url,website_secure,website_up_to_date,website_function,website_language,colonial_power,rank_africa,rank_world,impact_rank,openness_rank,excellence_rank,academic_system,engineering_courses,years_of_study,online_application,international_students,yearly_fee,masters_programme,online_payment,number_of_students,access_date,remarks
+University of Cape Town,South Africa,Cape Town,y,https://www.uct.ac.za/,y,y,good,English,United Kingdom,1,244,284,235,290,American,6,4,y,y,3860,y,y,30392,2023-06-14,NA
+University of Witwatersrand,South Africa,Johannesburg,y,https://www.wits.ac.za/,y,y,good,English,United Kingdom,2,392,657,379,403,American,10,4,y,y,3500,y,y,41000,2023-06-14,NA
+Stellenbosch University,South Africa,Stellenbosch,y,http://www.sun.ac.za/Home.aspx,n,y,good,English,United Kingdom,3,432,696,350,465,American,6,4,y,y,3940,y,y,NA,2023-06-14,NA
+Cairo University,Egypt,Cairo,y,https://cu.edu.eg/Home,y,n,good,Arabic,United Kingdom,5,542,1547,628,330,American,15,5,y,y,NA,y,n,207853,2023-04-24,NA
+Alexandria University,Egypt,Alexandria,y,https://www.alexu.edu.eg/index.php/en/home1,y,n,medium,Arabic,United Kingdom,6,578,880,753,591,American,13,5,y,y,1870,y,n,120000,2023-04-24,NA
+Mansoura University,Egypt,Al Mansurah,y,https://www.mans.edu.eg/en/,y,y,medium,Arabic,United Kingdom,11,922,3903,639,531,American,20,5,n,y,NA,y,y,217800,2023-04-24,NA
+Makerere University,Uganda,Kampala,y,https://www.mak.ac.ug/,y,y,good,English,United Kingdom,13,1054,1806,1198,1123,American,6,4,y,y,1236,y,y,NA,2023-06-15,NA
+University of Nairobi,Kenya,Nairobi,y,https://www.uonbi.ac.ke/,y,y,good,English,United Kingdom,14,1064,1084,744,1669,American,5,5,y,n,NA,y,y,45000,2023-06-08,NA
+University of Ghana,Ghana,Accra,y,https://www.ug.edu.gh/,y,y,good,English,United Kingdom,17,1097,2147,776,1181,American,5,4,y,y,NA,y,n,NA,2023-06-05,NA
+University of Ibadan,Nigeria,Ibadan,y,https://www.ui.edu.ng/,y,y,medium,English,United Kingdom,18,1116,2229,736,1210,American,8,5,y,y,NA,y,y,NA,2023-06-12,NA
+Université Cadi Ayyad Marrakech,Morocco,Marrakesh,y,https://www.uca.ma/,y,n,good,French,France,22,1201,2506,1621,1098,French,4,3,y,y,NA,y,n,69320,2023-06-09,NA
+Addis Ababa University,Ethiopia,Addis Ababa,y,http://www.aau.edu.et/,n,y,medium,English,None,23,1280,3178,1143,1174,American,5,NA,y,n,NA,y,n,47610,2023-05-26,NA
+Obafemi Awolowo University,Nigeria,Ilesa,y,https://oauife.edu.ng/,y,y,poor,English,United Kingdom,24,1302,1534,1020,1904,American,8,NA,n,n,NA,y,n,NA,2023-06-13,NA
+Covenant University Ota,Nigeria,Ota,y,https://covenantuniversity.edu.ng/,y,y,good,English,United Kingdom,25,1340,2868,1105,1391,American,7,5,y,y,2360,y,y,8601,2023-06-13,NA
+Kwame Nkrumah University of Science & Technology,Ghana,Kumasi,y,https://www.knust.edu.gh/,y,y,good,English,United Kingdom,30,1472,3984,979,1377,American,18,4,n,y,656,y,y,NA,2023-06-05,NA
+Université Mohammed V de Rabat,Morocco,Rabat,y,http://www.um5.ac.ma/um5/,n,y,good,French,France,35,1602,7556,1100,895,French,21,3,n,y,NA,y,n,88000,2023-06-09,NA
+University of Khartoum,Sudan,Khartoum,y,https://www.uofk.edu/en/,NA,NA,defunct,English,United Kingdom,42,1770,2507,1670,2254,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-14,2023 Sudan conflict (start date 15 April 2023)
+Université Hassan II de Casablanca,Morocco,Casablanca,y,https://www.univh2c.ma/,y,y,poor,French,France,46,1880,8845,1484,996,French,13,NA,n,n,NA,y,n,141887,2023-06-09,NA
+Université Amar Telidji de Laghouat,Algeria,Laghouat,y,http://lagh-univ.dz/en/,n,y,good,Arabic,France,47,1914,1436,2328,3054,French,3,3,n,y,NA,y,n,NA,2023-06-23,NA
+University of Dar Es Salaam,Tanzania,Dar Es Salaam,y,https://udsm.ac.tz/,y,y,good,English,United Kingdom,49,1967,3322,1454,2449,American,10,4,y,y,629,y,y,39958,2023-06-14,NA
+University of Cape Coast,Ghana,Cape Coast,y,https://www.ucc.edu.gh/,y,y,good,English,United Kingdom,53,2039,5189,1250,2083,American,0,4,y,y,NA,y,n,NA,2023-06-05,NA
+Kenyatta University,Kenya,Nairobi,y,https://www.ku.ac.ke/,y,y,good,English,United Kingdom,54,2047,1984,1376,3310,American,7,5,y,y,1508,y,y,NA,2023-06-08,Unclear if fee is per semester or year
+Kampala International University,Uganda,Kampala,y,https://www.kiu.ac.ug/,NA,NA,defunct,English,United Kingdom,56,2101,752,1735,4403,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-15,NA
+University of Zimbabwe,Zimbabwe,Harare,y,http://www.uz.ac.zw/,n,y,good,English,United Kingdom,57,2106,4952,2163,2035,American,18,NA,y,y,335,y,y,NA,2023-05-25,NA
+Sudan University of Science and Technology,Sudan,Khartoum,y,https://www.sustech.edu/,NA,NA,defunct,English,United Kingdom,58,2135,1326,2866,3562,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-14,2023 Sudan conflict (start date 15 April 2023)
+Université des Frères Mentouri Constantine I,Algeria,Constantine,y,https://www.umc.edu.dz/index.php/en/,y,y,medium,French,France,60,2173,5170,1239,2337,French,12,3,n,n,NA,y,n,30854,2023-06-23,NA
+Université de M'Sila,Algeria,M'Sila,y,https://www.univ-msila.dz/,y,y,medium,Arabic,France,62,2204,2733,1418,3211,French,15,3,n,n,NA,y,n,NA,2023-05-06,NA
+Bahir Dar University,Ethiopia,Bahir Dar,y,https://www.bdu.edu.et/,y,y,good,English,None,65,2284,6012,2125,2059,American,11,5,n,n,NA,y,n,52830,2023-06-15,NA
+University of Zambia,Zambia,Lusaka,y,https://www.unza.zm/,y,y,good,English,United Kingdom,66,2290,5220,1471,2472,American,8,5,y,y,NA,y,y,NA,2023-06-15,NA
+Université de Sfax,Tunisia,Sfax,n,https://univ-sfax.tn/,y,y,good,French,France,67,2294,5121,6547,875,French,17,3,y,n,NA,y,n,29899,2023-06-15,NA
+University of Mauritius,Mauritius,Moka,y,https://www.uom.ac.mu/,y,y,good,English,United Kingdom,70,2303,6065,2161,2067,American,7,4,y,y,606,y,y,9304,2023-06-09,NA
+Egerton University,Kenya,Nakuru,y,https://www.egerton.ac.ke/,y,y,good,English,United Kingdom,73,2360,1742,2821,3679,American,4,5,n,n,1180,y,n,20542,2023-06-08,NA
+Universidade Eduardo Mondlane,Mozambique,Maputo,y,https://www.uem.mz/,y,y,medium,Portuguese,Portugal,74,2362,1028,6451,2675,American,12,NA,n,n,NA,y,y,39391,2023-06-15,NA
+Sokoine University of Agriculture,Tanzania,Morogoro,y,https://www.sua.ac.tz/,y,y,good,English,United Kingdom,76,2368,4672,1224,2829,American,4,4,n,y,529,y,y,15014,2023-06-14,NA
+Université Cheikh Anta Diop de Dakar,Senegal,Dakar,y,https://www.ucad.sn/,y,y,good,French,France,82,2561,1556,6547,2389,French,14,3,y,y,NA,y,y,89589,2023-06-13,NA
+University of Rwanda,Rwanda,Butare,y,https://ur.ac.rw/,y,y,good,English,Belgium,85,2594,5068,3581,2519,American,14,4,y,y,1761,y,y,26894,2023-06-13,NA
+Mekelle University,Ethiopia,Mek'ele,y,http://www.mu.edu.et/,n,y,medium,English,None,87,2636,8655,2190,2042,American,20,NA,n,n,NA,y,n,30000,2023-05-26,"Confusing: 2 different, but very similarly named Institutes…"
+University of Botswana,Botswana,Gaborone,y,https://www.ub.bw/,y,y,good,English,United Kingdom,89,2668,4957,3874,2609,American,7,5,y,y,NA,y,y,NA,2023-06-01,NA
+University of Benghazi,Libya,Benghazi,y,https://uob.edu.ly/,y,n,poor,English,Italy,99,2789,3575,2823,3597,American,NA,NA,NA,NA,NA,y,NA,22000,2023-06-08,"Demo version, website is under construction"
+Muhimbili Uni of health and allied sciences,Tanzania,Dar Es Salaam,y,https://www.muhas.ac.tz/,y,y,medium,English,United Kingdom,110,2976,8517,2515,2556,American,0,NA,n,y,NA,y,y,NA,2023-06-14,NA
+Mbarara University of Science and Technology,Uganda,Mbarara,y,https://www.must.ac.ug/,NA,NA,defunct,English,United Kingdom,113,3018,5841,3449,3069,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-15,NA
+Université de Tunis El Manar,Tunisia,Tunis,y,http://www.utm.rnu.tn/utm/fr/,n,y,good,French,France,116,3054,9969,6547,951,French,8,3,y,y,NA,y,n,33000,2023-06-15,NA
+Botswana International University of Science & Technology,Botswana,Palapye,y,https://www.biust.ac.bw/,y,y,good,English,United Kingdom,117,3071,8387,2548,2745,American,10,5,y,y,2323,y,y,NA,2023-06-01,NA
+Universtié d'Abomey-Calavi,Benin,Cotonou,y,https://uac.bj/,y,n,medium,French,France,118,3103,8719,2984,2609,French,9,3,y,y,NA,y,n,NA,2023-05-06,NA
+Université de Dschang,Cameroon,Dschang,y,https://www.univ-dschang.org/,y,y,medium,French,France,121,3142,10807,3110,2225,French,1,3,y,NA,NA,y,n,NA,2023-05-31,NA
+Namibia University of Science and Technology,Namibia,Windhoek,y,https://www.nust.na/,y,y,good,English,South Africa,127,3252,4635,3394,3875,American,16,4,y,y,3207,y,y,15602,2023-06-09,B360 Partner School :D
+University of Namibia,Namibia,Windhoek,y,https://www.unam.edu.na/,y,y,good,English,South Africa,147,3555,4843,6547,2700,American,6,4,y,y,2042,y,y,28861,2023-06-09,NA
+Université de Carthage,Tunisia,Tunis,y,https://ucar.rnu.tn/,y,y,good,French,France,148,3559,12395,6547,1174,French,21,3,n,y,NA,y,n,30206,2023-06-15,Very convoluted website
+University of Buea,Cameroon,Buea,y,https://www.ubuea.cm/,y,y,good,English,France,153,3625,10386,3252,3041,American,4,4,y,NA,NA,y,n,NA,2023-06-01,NA
+Midlands State University,Zimbabwe,Gweru,y,https://ww5.msu.ac.zw/,y,y,good,English,United Kingdom,162,3798,5878,3010,4529,American,7,NA,y,y,NA,y,n,22000,2023-05-25,NA
+University of Tripoli,Libya,Tripoli,y,https://uot.edu.ly/,y,y,good,Arabic,Italy,168,3866,13386,1978,3170,American,17,5,n,n,NA,y,n,84897,2023-06-08,NA
+Université de Yaounde I,Cameroon,Yaoundé,y,https://uy1.uninet.cm/,y,n,good,French,France,172,3915,12234,6547,1599,French,6,5,n,NA,NA,y,n,NA,2023-06-01,NA
+Misurata University,Libya,Misratah,y,https://misuratau.edu.ly/,y,y,medium,Arabic,Italy,176,4015,9120,3602,3910,American,7,NA,n,n,NA,y,n,22340,2023-06-08,NA
+University of Gezira,Sudan,Wad Madani,n,http://uofg.edu.sd/,NA,NA,defunct,Arabic,United Kingdom,192,4307,13083,3222,3734,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-14,2023 Sudan conflict (start date 15 April 2023)
+University of Malawi,Malawi,Zomba,y,https://www.unima.ac.mw/,NA,NA,defunct,English,United Kingdom,195,4348,14691,6419,2096,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-09,NA
+Copperbelt University,Zambia,Kitwe,n,https://www.cbu.ac.zm/,y,y,medium,English,United Kingdom,196,4365,11209,3732,4088,American,10,5,y,n,1551,y,n,NA,2023-06-15,NA
+Universidade de Cabo Verde,Cape Verde,Praia,y,https://www.unicv.edu.cv/,y,y,good,Portuguese,Portugal,197,4373,2954,5633,5452,??,7,4,y,y,NA,y,n,NA,2023-06-01,NA
+National University of Science and Technology,Zimbabwe,Bulawayo,y,https://www.nust.ac.zw/,y,y,good,English,United Kingdom,199,4397,10087,2928,4593,American,5,5,y,y,1290,y,y,11329,2023-05-26,NA
+Université de Kinshasa,Democratic Republic of the Congo,Kinshasa,y,https://www.unikin.ac.cd/,y,y,poor,French,Belgium,203,4448,18299,3495,2887,NA,3,NA,y,n,NA,NA,y,NA,2023-06-01,NA
+Université d'Antananarivo,Madagascar,Antananarivo,y,https://www.univ-antananarivo.mg/,y,y,good,French,France,206,4466,9565,6547,3054,French,15,3,n,n,NA,y,n,NA,2023-06-09,NA
+Université Félix Houphouët Boigny,Ivory Coast,Abidjan,y,https://univ-fhb.edu.ci/,y,n,poor,French,France,218,4688,10851,6547,3229,NA,NA,NA,n,n,NA,NA,n,NA,2023-06-08,NA
+Université de Lomé,Togo,Lomé,y,https://univ-lome.tg/,y,y,medium,French,France,241,4980,11660,6195,4172,French,8,NA,y,y,NA,y,n,NA,2023-06-15,NA
+National University of Lesotho,Lesotho,Maseru,y,https://www.nul.ls/,y,y,good,English,United Kingdom,251,5063,10602,4023,5283,American,2,5,y,n,1583,y,y,NA,2023-06-08,NA
+Université du Burundi,Burundi,Bujumbura,y,https://www.ub.edu.bi/,y,y,medium,French,Belgium,258,5193,12133,5445,4872,French,5,3,n,y,NA,n,n,NA,2023-06-01,NA
+Université Gaston Berger de Saint Louis,Senegal,Saint-Louis,y,https://www.ugb.sn/,y,y,medium,French,France,262,5242,9233,6547,4669,French,0,3,n,n,NA,y,n,11441,2023-06-13,biggest lorem ipsum
+Mzuzu University,Malawi,Mzuzu,y,https://www.mzuni.ac.mw/,y,y,medium,English,United Kingdom,271,5351,14180,5805,4632,American,0,4,n,n,NA,y,n,5000,2023-06-09,NA
+Institut National Polytechnique Félix Houphouët Boigny,Ivory Coast,Yamoussoukro,y,https://inphb.ci/,y,y,good,French,France,273,5390,12839,6451,4434,French,7,5,y,n,NA,y,y,3256,2023-06-08,Better trailer than ETHZ…
+Université Joseph Ki-Zerbo,Burkina Faso,Ouagadougou,y,https://www.ujkz.bf/,y,y,medium,French,France,279,5514,19365,6057,3748,NA,1,NA,n,n,NA,y,n,44860,2023-05-10,NA
+University of Sierra Leone,Sierra Leone,Freetown,y,https://usl.edu.sl/,y,y,poor,English,United Kingdom,301,5863,15948,6547,4367,American,1,5,y,n,760,y,y,21128,2023-06-14,Extremely weird website navigation
+Botswana University of Agriculture and Natural Resources,Botswana,Gaborone,n,https://www.buan.ac.bw,y,y,good,English,United Kingdom,312,5987,18722,3099,5452,American,1,4,y,y,2700,y,y,NA,2023-06-01,NA
+Université de Lubumbashi,Democratic Republic of the Congo,Lubumbashi,y,https://www.unilu.ac.cd/,y,y,medium,French,Belgium,314,5997,16914,6311,4747,American,3,3,n,n,NA,y,n,NA,2023-06-01,NA
+University of the Gambia,Gambia,Banjul,y,https://www.utg.edu.gm/,y,y,medium,English,United Kingdom,316,6073,15212,5062,5572,American,NA,NA,y,y,638,y,y,NA,2023-06-02,Lorem ipsum…
+University of Eswatini,Eswatini,Kwaluseni,y,http://www.uneswa.ac.sz/,n,y,good,English,United Kingdom,318,6125,11452,6547,5381,American,2,5,y,n,1086,y,y,7645,2023-06-01,NA
+Université de Parakou,Benin,Parakou,NA,http://www.univ-parakou.bj/,NA,NA,defunct,NA,France,323,6259,17726,6547,4563,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-15,NA
+Njala University Sierra Leone,Sierra Leone,Bo,y,https://njala.edu.sl/,y,y,medium,English,United Kingdom,326,6294,16839,4919,5572,American,1,4,y,n,186,y,n,NA,2023-06-14,NA
+Université Marien Ngouabi,Republic of the Congo,Brazzaville,y,https://www.umng.cg/,y,n,good,English,France,329,6328,16601,6547,4829,French,3,3,n,n,NA,y,n,NA,2023-06-13,NA
+University of Liberia,Liberia,Monrovia,y,https://ul.edu.lr/,n,NA,defunct,English,USA,332,6416,14763,6547,5175,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-08,Website of the office of IT still running
+Universidade Católica de Moçambique,Mozambique,Beira,y,http://www.ucm.ac.mz/,n,y,medium,Portuguese,Portugal,347,6677,12568,6547,5666,American,6,4,y,n,NA,y,n,NA,2023-06-15,ROR changed the entry!!!
+Université Catholique de Bukavu,Democratic Republic of the Congo,Bukavu,y,https://ucbukavu.ac.cd/,NA,NA,defunct,English,Belgium,350,6697,19570,5958,5229,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-01,NA
+International Open University,Gambia,Kanifing,n,https://iou.edu.gm/,y,y,good,English,United Kingdom,351,6704,2377,6547,7206,American,0,4,y,y,NA,y,NA,473729,2023-06-05,Online only
+University of Malawi College of Medecine Liverpool Wellcome Trust,Malawi,Blantyre,y,https://www.mlw.mw/,y,y,good,English,United Kingdom,358,6777,5575,5056,7206,American,0,NA,n,n,NA,y,n,NA,2023-06-09,strange University…
+Universidade Agostinho Neto,Angola,Luanda,y,https://uan.ao/,y,y,medium,Portuguese,Portugal,361,6834,14352,6547,5511,American,9,NA,n,n,NA,y,n,NA,2023-06-23,NA
+Université Nazi Boni,Burkina Faso,Bobo-Dioulasso,y,https://www.univ-bobo.gov.bf/,y,y,poor,French,France,368,6934,19644,6547,4829,French,9,3,n,n,NA,y,n,NA,2023-06-23,"ROR changed the entry!!!, website extremely slow"
+Université Alioune Diop de Bambey,Senegal,Diourbel,y,http://www.uadb.edu.sn/,n,y,medium,French,France,378,7158,16362,5958,5848,French,0,3,n,n,NA,y,n,8596,2023-06-13,PowerPoint-Website ^^
+Université Gamal Abdel Nasser de Conakry,Guinea,Conakry,y,https://uganc.edu.gn/,y,y,good,French,France,382,7235,22272,6547,4529,French,7,4,y,n,NA,y,y,NA,2023-06-05,ROR changed the entry!!!
+Universidade Pedagógica,Mozambique,Maputo,y,https://www.up.ac.mz/,y,y,medium,Portuguese,Portugal,393,7584,13270,6547,5942,American,2,NA,n,n,NA,y,n,NA,2023-06-15,NA
+Mulungushi University,Zambia,Kabwe,y,https://www.mu.ac.zm/,y,y,medium,English,United Kingdom,405,7825,14158,5849,6352,American,2,5,y,y,NA,y,y,9000,2023-06-15,NA
+University of Seychelles,Seychelles,Anse Royale,y,https://unisey.ac.sc/,y,y,good,English,United Kingdom,413,7986,15130,6547,5848,American,0,3,y,y,8600,y,y,NA,2023-06-13,NA
+SIMAD University,Somalia,Mogadishu,y,https://simad.edu.so/,y,y,medium,English,United Kingdom*,417,8059,13818,5524,6544,American,3,5,n,n,1500,y,n,4150,2023-06-14,NA
+Université de Djibouti,Djibouti,Djibouti,y,http://www.univ.edu.dj/,n,n,poor,French,France,422,8166,13801,6547,6057,French,NA,NA,n,n,NA,NA,n,NA,2023-06-23,NA
+Université Alassane Ouattara,Ivory Coast,Bouaké,y,https://univ-ao.edu.ci/,y,y,good,French,France,432,8424,16171,6547,5848,French,0,3,n,n,NA,y,n,NA,2023-06-08,NA
+Université de Bangui,Central African Republic,Bangui,y,https://www.univ-bangui.org/,y,y,Poor,French,France,438,8478,18340,6547,5572,French,6,NA,NA,n,NA,y,NA,NA,2023-05-31,NA
+Université Norbert Zongo,Burkina Faso,Koudougou,y,https://www.unz.bf/,y,y,medium,French,France,482,9510,6415,6547,7206,French,2,3,n,n,NA,y,n,NA,2023-05-10,NA
+"University of Technology, Mauritius",Mauritius,Port Louis,y,https://www.utm.ac.mu/,y,y,good,English,United Kingdom,489,9731,14526,6547,6352,American,4,4,n,y,984,y,y,NA,2023-06-09,NA
+Mauritius Institute of Education,Mauritius,Moka,y,http://web.mie.ac.mu/,n,y,good,English,United Kingdom,503,10127,15327,6547,6352,American,0,4,y,n,NA,y,n,NA,2023-06-09,NA
+Kibogora Polytechnic,Rwanda,Kirambo,n,https://kp.ac.rw/,y,y,good,English,Belgium,514,10486,7785,6547,7206,American,0,4,y,n,705,n,n,NA,2023-06-13,NA
+Euclid University,Gambia,Banjul,y,https://www.euclid.int/,y,y,good,English,United Kingdom,568,12266,10150,6547,7206,American,0,NA,y,y,NA,y,n,NA,2023-06-05,"Online only, Ultra shady…"
+Université de N'Djamena,Chad,N'Djamena,y,https://www.universite-ndjamena.td/,y,y,good,French,France,580,12544,22619,6547,5942,French,1,3,n,y,NA,y,n,26349,2023-05-25,NA
+Université de Nouakchott Al Aasriya,Mauritania,Nouakchott,y,https://www.univ-nkc.mr/,y,y,medium,French,France,588,12793,23752,6547,5848,French,NA,3,n,n,NA,y,n,19127,2023-06-09,NA
+Amoud University,Somalia,Borama,y,https://amouduniversity.org/,y,y,medium,English,United Kingdom*,589,12857,17786,6547,6544,American,3,NA,n,n,NA,y,n,5000,2023-06-14,NA
+University of Hargeisa,Somalia,Hargeisa,y,http://www.uoh-edu.net/,n,y,medium,English,United Kingdom*,593,13061,18046,6547,6544,American,4,5,n,n,NA,y,n,NA,2023-06-14,NA
+University of Global Health Equity,Rwanda,Kigali,y,https://ughe.org/,y,y,good,English,Belgium,595,13087,11179,6547,7206,American,0,NA,n,y,0,y,n,NA,2023-06-13,NA
+École du Patrimoine Africain,Benin,Porto-Novo,n,https://www.epa-prema.net/,y,y,good,French,France,649,14146,12523,6547,7206,French,0,NA,n,n,NA,n,n,NA,2023-06-23,NA
+Université de Kara,Togo,Kara,y,https://univ-kara.tg/,y,y,poor,French,France,658,14292,21418,6547,6352,French,0,NA,n,n,NA,n,n,18216,2023-06-15,NA
+Université des Sciences et Techniques de Masuku,Gabon,Franceville,y,http://univ-masuku.org/,n,y,poor,French,France,683,14752,27710,6547,5572,NA,NA,NA,y,n,NA,NA,n,NA,2023-06-02,NA
+United Methodist University,Liberia,Monrovia,y,http://umu.edu.lr/,n,y,medium,English,USA,687,14841,13404,6547,7206,American,1,NA,n,n,1600,y,n,NA,2023-06-08,NA
+Universidade Óscar Ribas,Angola,Luanda,y,https://uor.ed.ao/,y,n,good,Portuguese,Portugal,693,14939,13520,6547,7206,NA,4,4,y,n,NA,y,y,NA,2023-05-06,NA
+Universidade Católica de Angola,Angola,Luanda,y,https://ucan.persistec.com/,y,y,good,Portuguese,Portugal,702,15136,13747,6547,7206,NA,3,5,y,n,NA,y,n,5000,2023-05-06,NA
+International University of Management,Namibia,Windhoek,y,https://www.ium.edu.na/,y,y,good,English,South Africa,709,15273,13911,6547,7206,American,1,4,y,y,1478,y,y,NA,2023-06-12,NA
+Université de Toliara,Madagascar,Toliara,y,https://www.univ-toliara.mg/,n,y,poor,French,France,724,15576,18690,6547,6808,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-09,Website under construction
+Université de Mahajanga,Madagascar,Mahajanga,y,https://www.univ-mahajanga.edu.mg/,NA,NA,defunct,French,France,730,15718,23123,6547,6352,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-09,Website under construction
+École Normale Supérieure Bujumbura,Burundi,Bujumbura,n,https://ens.edu.bi/,y,y,poor,French,Belgium,743,16007,25844,6547,6057,French,NA,NA,n,n,NA,n,n,NA,2023-06-01,virtually no information found on the website
+Université des Comores,Comoros,Mavingouni,n,https://univ-comores.km/,y,n,medium,French,France,757,16157,19407,6547,6808,French,1,2,n,n,NA,y,y,13000,2023-05-11,NA
+Universidade Jean Piaget de Cabo Verde,Cape Verde,Praia,y,http://www.unipiaget.cv/,n,y,good,Portuguese,Portugal,846,17610,16665,6547,7206,??,3,4,y,n,NA,y,n,NA,2023-06-01,NA
+Université Catholique de l'Afrique de l'Ouest - Unité Universitaire au Togo,Togo,Lomé,n,https://ucao-uut.tg/,y,y,good,French,France,922,18556,17726,6547,7206,French,2,NA,y,n,1252,y,y,NA,2023-06-15,NA
+University of Makeni,Sierra Leone,Makeni,y,https://unimak.edu.sl/,y,y,medium,English,United Kingdom,932,18697,17882,6547,7206,American,0,4,n,n,366,y,n,5019,2023-06-14,ROR changed the entry!!!
+Hope Africa University,Burundi,Bujumbura,y,https://www.hau.bi/,y,n,poor,English,Belgium,983,19388,18690,6547,7206,American,1,NA,y,n,NA,y,n,NA,2023-06-01,funded by American churches
+"Université des Sciences , des Techniques et des Technologies de Bamako",Mali,Bamako,y,www.usttb.edu.ml/,NA,NA,defunct,NA,France,990,19509,18828,6547,7206,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-09,NA
+African Methodist Episcopal University,Liberia,Monrovia,y,https://www.ame.edu.lr/,y,y,medium,English,USA,1000,19762,19108,6547,7206,American,0,4,n,n,NA,y,n,NA,2023-06-08,NA
+University of Juba,South Sudan,Juba,y,https://uoj.edu.ss/,y,y,medium,English,United Kingdom,1006,19834,29087,6547,6057,American,4,5,n,n,NA,y,n,NA,2023-06-14,"Lorem ipsum is for losers, Kafka's ""The Metamorphosis"" is the new placeholder text"
+Universidade de Santiago,Cape Verde,Assomada,n,https://us.edu.cv/siteUS/,NA,NA,defunct,Portuguese,Portugal,1155,21502,21062,6547,7206,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-01,NA
+Universidad Nacional de Guinea Ecuatorial,Equatorial Guinea,Malabo,n,https://ungecampus.com/,y,y,medium,Spanish,Spain,1184,21821,21418,6547,7206,French,7,NA,n,n,NA,NA,n,8463,2023-05-26,NA
+Eswatini Medical Christian University,Eswatini,Mbabane,n,https://emcu.ac.sz/,y,y,good,English,United Kingdom,1219,22202,21840,6547,7206,American,0,4,n,y,1113,n,y,NA,2023-06-01,NA
+Université Omar Bongo,Gabon,Libreville,n,NA,NA,NA,NA,NA,France,1274,22959,30536,6547,6057,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-02,NA
+University of Seychelles American Institute of Medicine,Seychelles,Victoria,n,https://www.usaim.edu/,y,n,good,English,United Kingdom,1298,23183,22918,6547,7206,American,0,NA,y,n,NA,y,y,NA,2023-06-14,Shill Uni?
+Southern Africa Nazarene University,Eswatini,Manzini,y,https://www.sanu.ac.sz/,y,y,good,English,United Kingdom,1301,23249,22989,6547,7206,American,0,4,y,n,1089,n,y,NA,2023-06-01,NA
+Université des Sciences Juridiques et Politiques de Bamako,Mali,Bamako,y,https://usjpb.edu.ml/,y,y,medium,French,France,1349,23969,23752,6547,7206,French,0,3,n,n,NA,y,n,15000,2023-06-09,NA
+École des Mines et de la Métallurgie de Moanda,Gabon,Moanda,n,https://www.e3mg.ga/,NA,NA,defunct,French,France,1353,24051,23835,6547,7206,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-02,NA
+Lesotho College of Education,Lesotho,Maseru,n,http://www.lce.ac.ls/,n,y,medium,English,United Kingdom,1359,24136,23926,6547,7206,NA,0,NA,n,n,NA,NA,n,NA,2023-06-08,NA
+"Université des Sciences, de Technologie et de Médecine",Mauritania,Nouakchott,y,https://www.ustm.mr/,n,NA,defunct,NA,France,1406,24807,24628,6547,7206,NA,NA,NA,NA,NA,NA,NA,NA,NA,2023-06-09,NA
+École Nationale d'Administration de Journalisme et de Magistrature,Mauritania,Nouakchott,n,http://enajm.mr/,n,n,poor,Arabic,France,1474,25487,25344,6547,7206,NA,0,NA,n,n,NA,n,n,NA,2023-06-09,NA
+Université Julius Nyéréré de Kankan,Guinea,Kankan,y,http://www.ujnk.org/,n,n,medium,French,France,1489,25560,25423,6547,7206,French,0,NA,n,n,NA,y,n,NA,2023-06-05,early-2000s-website; scanned pdf in different orientations
+Institut Polytechnique Rural de Formation et de Recherche Appliquée,Mali,Katibougou,n,https://ipr-ifra.org/,y,NA,medium,French,France,1496,25631,25495,6547,7206,French,1,3,n,y,9,y,n,470,2023-06-09,Fee unclear
+Islamic University of Niger,Niger,Say,y,http://universite-say.com/,y,n,medium,Arabic,France,1593,26804,26707,6547,7206,NA,NA,4,n,n,NA,y,n,3082,2023-06-12,NA
+École Supérieure de Gestion et d'Administration des Entreprises Brazzaville,Republic of the Congo,Brazzaville,n,https://www.esgae.org/,y,y,good,French,France,1599,26898,26806,6547,7206,French,1,3,n,n,740,y,n,NA,2023-06-13,NA
+Seychelles Polytechnic,Seychelles,Anse Royale,n,http://www.seypoly.edu.sc/,n,n,medium,English,United Kingdom,1712,28190,28134,6547,7206,NA,0,NA,n,n,NA,n,n,NA,2023-06-14,NA
+Université Nongo Conakry,Guinea,Conakry,n,https://unc-edu.org/,y,y,good,French,France,1728,28478,28428,6547,7206,French,4,4,y,n,NA,y,n,NA,2023-06-05,NA
+École Nationale d'Administration,Chad,N'Djamena,n,https://www.ena.td/,y,y,good,English,France,1788,29231,29197,6547,7206,French,0,3,n,n,NA,y,n,NA,2023-05-25,NA
+Université Emi Koussi,Chad,N'Djamena,n,https://universite-emikoussi.net/,y,n,medium,French,France,1845,29743,29721,6547,7206,French,2,3,n,y,765,y,n,NA,2023-05-25,NA
+Université Abdou Moumouni de Niamey,Niger,Niamey,n,https://www.uam.edu.ne/,y,n,poor,French,France,1847,29852,29833,6547,7206,French,NA,3,n,n,NA,y,n,20386,2023-06-12,Under construction
+University of Bahr El Ghazal,South Sudan,Wau,n,https://ubg.edu.ss/,y,y,poor,English,United Kingdom,2089,32234,32233,6547,7206,American,0,5,y,n,NA,n,n,NA,2023-06-14,NA

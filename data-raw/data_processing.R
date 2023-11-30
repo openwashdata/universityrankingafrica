@@ -39,11 +39,11 @@ african_countries <- countries_raw |>
 ## write data
 usethis::use_data(ranking, overwrite = TRUE)
 fs::dir_create(here::here("inst", "extdata")) #exports dataset in R
-write_csv(ranking, here::here("inst/extdata/ranking")) #exports dataset in csv and excel
-openxlsx::write.xlsx(ranking,"inst/extdata/ranking")
+write_csv(ranking, here::here("inst/extdata/ranking.csv")) #exports dataset in csv and excel
+openxlsx::write.xlsx(ranking,"inst/extdata/ranking.xlsx")
 
 usethis::use_data(african_countries, overwrite = TRUE)
-write_csv(african_countries, here::here("inst/extdata/african_countries")) #exports dataset in csv and excel
-openxlsx::write.xlsx(african_countries,"inst/extdata/african_countries")
+write_csv(african_countries, here::here("inst/extdata/african_countries.csv")) #exports dataset in csv and excel
+openxlsx::write.xlsx(african_countries,"inst/extdata/african_countries.xlsx")
 
 

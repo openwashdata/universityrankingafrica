@@ -1,0 +1,56 @@
+countries,region,uni_count,best_uni_rank,gdp,gdp_per_capita,hdi
+Algeria,Northern Africa,3,47,487716160000,11039.806,0.74
+Angola,Southern Africa,3,361,203867960000,5908.57,0.59
+Benin,Western Africa,3,118,43169866000,3321.5522,0.53
+Botswana,Southern Africa,3,89,38414560000,14840.913,0.69
+Burkina Faso,Western Africa,3,279,48174825000,2179.789,0.45
+Burundi,Central Africa,3,258,8848987000,705.0304,0.43
+Cameroon,Central Africa,3,121,100647550000,3700.4644,0.58
+Cape Verde,Western Africa,3,197,3594652000,6114.1333,0.66
+Central African Republic,Central Africa,1,438,4570392000,837.5047,0.4
+Chad,Central Africa,3,580,24489626000,1425.4945,0.39
+Comoros,Eastern Africa,1,757,2652638500,3228.5269,0.56
+Democratic Republic of the Congo,Central Africa,3,203,102956070000,1073.6433,0.48
+Djibouti,Eastern Africa,1,422,5431885000,4913.2563,0.51
+Egypt,Northern Africa,3,5,1263731700000,11566.05,0.73
+Equatorial Guinea,Central Africa,1,1184,23923692000,14637.008,0.6
+Eritrea,Eastern Africa,0,NA,NA,NA,NA
+Eswatini,Southern Africa,3,318,10559740000,8856.829,0.6
+Ethiopia,Eastern Africa,3,23,278944550000,2319.0684,0.5
+Gabon,Central Africa,3,683,32340398000,13813.723,0.71
+Gambia,Western Africa,3,316,5481961000,2076.5664,0.5
+Ghana,Western Africa,3,17,178455330000,5435.238,0.63
+Guinea,Western Africa,3,382,35728888000,2640.3442,0.47
+Guinea-Bissau,Western Africa,0,NA,3773970000,1831.3832,0.48
+Ivory Coast,Western Africa,3,218,146322500000,5325.0303,0.55
+Kenya,Eastern Africa,3,14,251431400000,4743.4863,0.57
+Lesotho,Southern Africa,2,251,5236466700,2295.2322,0.51
+Liberia,Western Africa,3,332,7391423500,1423.2296,0.48
+Libya,Northern Africa,3,99,147941520000,21965.174,0.72
+Madagascar,Eastern Africa,3,206,42321780000,1463.6288,0.5
+Malawi,Southern Africa,3,195,29658268000,1491.1339,0.51
+Mali,Western Africa,3,990,46452216000,2120.6233,0.43
+Mauritania,Northern Africa,3,588,24494076000,5307.522,0.56
+Mauritius,Eastern Africa,3,70,26546680000,20967.947,0.8
+Morocco,Northern Africa,3,22,303335500000,8058.397,0.68
+Mozambique,Southern Africa,3,74,39351090000,1226.767,0.45
+Namibia,Southern Africa,3,127,23120007000,9137.797,0.61
+Niger,Western Africa,2,1593,29964294000,1186.5768,0.4
+Nigeria,Western Africa,3,18,1050496300000,4922.6323,0.54
+Republic of the Congo,Central Africa,2,329,18875290000,3234.393,0.57
+Rwanda,Eastern Africa,3,58,30140592000,2238.9573,0.53
+Sahrawi Arab Democratic Republic,Northern Africa,0,NA,NA,NA,NA
+São Tomé and Principe,Central Africa,0,NA,904057100,4052.1233,0.62
+Senegal,Western Africa,3,82,58990950000,3495.4036,0.51
+Seychelles,Eastern Africa,3,413,2854711300,28760.516,0.79
+Sierra Leone,Western Africa,3,301,13596793000,1614.6981,0.48
+Somalia,Eastern Africa,3,417,19399060000,1136.736,NA
+South Africa,Southern Africa,3,1,790625260000,13311.926,0.71
+South Sudan,Eastern Africa,2,1006,NA,NA,0.39
+Sudan,Eastern Africa,3,42,168980450000,3701.069,0.51
+Tanzania,Eastern Africa,3,49,159326110000,2581.6997,0.55
+Togo,Western Africa,3,241,18368570000,2124.8042,0.54
+Tunisia,Northern Africa,3,67,127509420000,10397.944,0.73
+Uganda,Eastern Africa,3,13,103006580000,2246.414,0.53
+Zambia,Southern Africa,3,66,63030395000,3236.789,0.56
+Zimbabwe,Southern Africa,3,57,33828616000,2115.1445,0.59
