@@ -5,14 +5,14 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="description" content="What the package does (one paragraph).">
+<meta name="description" content="Data from institutional and national levels was combined into a dataset to provide a comprehensive characterization of the top ranked Universities of every African country. This was done to demonstrate the correlation of certain attributes with the academic ranking performance. The dataset also highlights the difficulties of accessing data from many African Universities online.">
 <title>University Ranking Africa • universityrankingafrica</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="University Ranking Africa">
-<meta property="og:description" content="What the package does (one paragraph).">
+<meta property="og:description" content="Data from institutional and national levels was combined into a dataset to provide a comprehensive characterization of the top ranked Universities of every African country. This was done to demonstrate the correlation of certain attributes with the academic ranking performance. The dataset also highlights the difficulties of accessing data from many African Universities online.">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -61,7 +61,7 @@
 </h1></div>
 <!-- badges: start -->
 <!-- badges: end -->
-<p>This packages combines data collected as part of an MSc. Thesis Project. The project was supported by the Global Health Engineering group at ETH Zurich, Switzerland.</p>
+<p>This packages combines data collected as part of an MSc. Thesis Project. The goal of this project was to build an openly accessible database with data from the top ranked universities of each African country. The project is supported by the Global Health Engineering group at ETH Zurich, Switzerland.</p>
 <p><img src="reference/figures/README-unnamed-chunk-2-1.png" width="100%" style="display: block; margin: auto;"></p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
@@ -70,23 +70,30 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"openwashdata/universityrankingafrica"</span><span class="op">)</span></span></code></pre></div>
-<p>Alternatively, you can download the dataset as a CSV or XLSX file from the table below.</p>
+<p>Alternatively, you can download the individual dataset as a CSV or XLSX file from the table below.</p>
 <table class="table">
 <colgroup>
-<col width="9%">
-<col width="44%">
+<col width="7%">
 <col width="45%">
+<col width="46%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">dataset</th>
 <th align="left">CSV</th>
 <th align="left">XLSX</th>
 </tr></thead>
-<tbody><tr class="odd">
-<td align="left">universityrankingafrica</td>
-<td align="left"><a href="https://github.com/openwashdata/universityrankingafrica/inst/extdata/universityrankingafrica.csv" class="external-link">Download CSV</a></td>
-<td align="left"><a href="https://github.com/openwashdata/universityrankingafrica/inst/extdata/universityrankingafrica.xlsx" class="external-link">Download XLSX</a></td>
-</tr></tbody>
+<tbody>
+<tr class="odd">
+<td align="left">ranking</td>
+<td align="left"><a href="https://github.com/openwashdata/universityrankingafrica/raw/main/inst/extdata/ranking.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/openwashdata/universityrankingafrica/raw/main/inst/extdata/ranking.xlsx" class="external-link">Download XLSX</a></td>
+</tr>
+<tr class="even">
+<td align="left">african_countries</td>
+<td align="left"><a href="https://github.com/openwashdata/universityrankingafrica/raw/main/inst/extdata/african_countries.csv" class="external-link">Download CSV</a></td>
+<td align="left"><a href="https://github.com/openwashdata/universityrankingafrica/raw/main/inst/extdata/african_countries.xlsx" class="external-link">Download XLSX</a></td>
+</tr>
+</tbody>
 </table>
 </div>
 <div class="section level2">
@@ -95,25 +102,28 @@
 <div class="section level3">
 <h3 id="description">Description<a class="anchor" aria-label="anchor" href="#description"></a>
 </h3>
+<p>Data from institutional and national levels was combined into a dataset to provide a comprehensive characterization of the top ranked Universities of every African country. This was done to demonstrate the correlation of certain attributes with the academic ranking performance. The dataset also highlights the difficulties of accessing data from many African Universities online.</p>
 </div>
 <div class="section level3">
 <h3 id="research-question">Research Question<a class="anchor" aria-label="anchor" href="#research-question"></a>
 </h3>
+<p>Which attributes of an African university correlate with its performance in an international ranking?</p>
 </div>
 <div class="section level3">
 <h3 id="data">Data<a class="anchor" aria-label="anchor" href="#data"></a>
 </h3>
-<p>The package provides access to one data set.</p>
+<p>The data was collected between April and June 2023 using only the official websites of the Universities. The ranking data originates from the <a href="https://www.webometrics.info/en/Africa" class="external-link">Ranking Web of Universities</a>. It’s worth noting that while the World Ranking comprises 11’997 universities, the African Ranking accounts for 2’064 universities. For the data collection at hand, it was decided to only consider the 3 (at most) highest ranked universities of each African country. The gathered data offers interesting insights into the African academic landscape, mostly through the process of combing through more than 140 websites in the search for information. Generally, this data collection process gets more and more difficult the further down the ranking performance goes: Navigation is more confusing and useful information scarcer. Assisting institutions in improving the quality of their web contents could be one possible avenue for cooperation with African universities in the future.</p>
+<p>The package provides access to two data sets.</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">universityrankingafrica</span><span class="op">)</span></span></code></pre></div>
-<p>The <code>universityrankingafrica</code> data set has 27 variables and 141 observations. For an overview of the variable names, see the following table.</p>
+<p>The <code>ranking</code> data set has 26 variables and 141 observations. For an overview of the variable names, see the following table.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">universityrankingafrica</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">ranking</span> </span></code></pre></div>
 <table class="table">
 <colgroup>
-<col width="6%">
+<col width="4%">
 <col width="8%">
-<col width="85%">
+<col width="87%">
 </colgroup>
 <thead><tr class="header">
 <th align="left">variable_name</th>
@@ -122,172 +132,189 @@
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td align="left">University</td>
+<td align="left">university</td>
 <td align="left">string</td>
 <td align="left">Name of the University</td>
 </tr>
 <tr class="even">
-<td align="left">Country</td>
+<td align="left">country</td>
 <td align="left">drop-down from List of African countries</td>
 <td align="left">Country where the University is located</td>
 </tr>
 <tr class="odd">
-<td align="left">City</td>
+<td align="left">city</td>
 <td align="left">string</td>
 <td align="left">City where the University is located</td>
 </tr>
 <tr class="even">
-<td align="left">ROR entry correct</td>
+<td align="left">ror_entry_correct</td>
 <td align="left">y / n</td>
 <td align="left">Is the entry on the ror.org-website corresponding to the University correct? In most “n”-cases, the stated website is incorrect</td>
 </tr>
 <tr class="odd">
-<td align="left">URL</td>
+<td align="left">url</td>
 <td align="left">URL</td>
 <td align="left">Official website of the University</td>
 </tr>
 <tr class="even">
-<td align="left">Website Secure</td>
+<td align="left">website_secure</td>
 <td align="left">y / n</td>
 <td align="left">Does the website use https? Is there no security related pop-up upon opening the website?</td>
 </tr>
 <tr class="odd">
-<td align="left">Website up to date</td>
+<td align="left">website_up_to_date</td>
 <td align="left">y / n</td>
 <td align="left">Are news articles on the website up to date OR is the copyright date of the website the current year?</td>
 </tr>
 <tr class="even">
-<td align="left">Website Function</td>
+<td align="left">website_function</td>
 <td align="left">good / medium / poor / defunct</td>
 <td align="left">Good: navigating through the website is smooth, no OR very few dead or redundant links. Medium: some dead links within the webpage, some placeholders (“lorem ipsum”) still visible, some blank or empty pages. Poor: Navigating through the website is very difficult. Defunct: the official link of the university’s website is no longer hosted, or is otherwise inaccessible. Note: Does NOT indicate how much information can be found on the website.</td>
 </tr>
 <tr class="odd">
-<td align="left">Website Language</td>
+<td align="left">website_language</td>
 <td align="left">string</td>
 <td align="left">Default language of the landing site</td>
 </tr>
 <tr class="even">
-<td align="left">Colonial Power at Independence</td>
+<td align="left">colonial_power</td>
 <td align="left">string</td>
 <td align="left">The colonial Power from which the country gained independence, if it ever was colonized or became independent.</td>
 </tr>
 <tr class="odd">
-<td align="left">Rank Africa</td>
+<td align="left">rank_africa</td>
 <td align="left">int</td>
-<td align="left">The rank of the University in Africa, according to <a href="https://www.webometrics.info/en/Ranking_africa" class="external-link uri">https://www.webometrics.info/en/Ranking_africa</a>
+<td align="left">The rank of the University in Africa (2’064 universities), according to <a href="https://www.webometrics.info/en/Ranking_africa" class="external-link uri">https://www.webometrics.info/en/Ranking_africa</a>
 </td>
 </tr>
 <tr class="even">
-<td align="left">Rank World</td>
+<td align="left">rank_world</td>
 <td align="left">int</td>
-<td align="left">The rank of the University in the World, according to <a href="https://www.webometrics.info/en/Ranking_africa" class="external-link uri">https://www.webometrics.info/en/Ranking_africa</a>
+<td align="left">The rank of the University in the World (11’997 universities), according to <a href="https://www.webometrics.info/en/Ranking_africa" class="external-link uri">https://www.webometrics.info/en/Ranking_africa</a>
 </td>
 </tr>
 <tr class="odd">
-<td align="left">Impact Rank</td>
+<td align="left">impact_rank</td>
 <td align="left">int</td>
 <td align="left">The impact rank of the University, according to <a href="https://www.webometrics.info/en/Ranking_africa" class="external-link uri">https://www.webometrics.info/en/Ranking_africa</a>
 </td>
 </tr>
 <tr class="even">
-<td align="left">Openness Rank</td>
+<td align="left">openness_rank</td>
 <td align="left">int</td>
 <td align="left">The openness rank of the University, according to <a href="https://www.webometrics.info/en/Ranking_africa" class="external-link uri">https://www.webometrics.info/en/Ranking_africa</a>
 </td>
 </tr>
 <tr class="odd">
-<td align="left">Excellence Rank</td>
+<td align="left">excellence_rank</td>
 <td align="left">int</td>
 <td align="left">The excellence rank of the University, according to <a href="https://www.webometrics.info/en/Ranking_africa" class="external-link uri">https://www.webometrics.info/en/Ranking_africa</a>
 </td>
 </tr>
 <tr class="even">
-<td align="left">Academic System Used</td>
+<td align="left">academic_system</td>
 <td align="left">American / French</td>
 <td align="left">Which academic system is used at the University: American (Undergraduate, Graduate, Doctorate) or French (LMD: Licence, Master, Doctorat)</td>
 </tr>
 <tr class="odd">
-<td align="left">Number of Engineering Courses</td>
+<td align="left">engineering_courses</td>
 <td align="left">int</td>
 <td align="left">The number of different undergraduate engineering courses the University offers.</td>
 </tr>
 <tr class="even">
-<td align="left">Years of Study</td>
+<td align="left">years_of_study</td>
 <td align="left">int</td>
 <td align="left">Stated duration of an undergraduate engineering degree. If the University doesn’t offer engineering degrees, the duration of another undergraduate degree is indicated.</td>
 </tr>
 <tr class="odd">
-<td align="left">Online Application</td>
+<td align="left">online_application</td>
 <td align="left">y / n</td>
 <td align="left">Is there a possibility to apply for the University online? If no explicit method is stated to send the application online, it’s considered as “no”</td>
 </tr>
 <tr class="even">
-<td align="left">International Students</td>
+<td align="left">international_students</td>
 <td align="left">y / n</td>
 <td align="left">Does the University give special information to interested foreign students on how to enter?</td>
 </tr>
 <tr class="odd">
-<td align="left">Yearly Fee</td>
+<td align="left">yearly_fee</td>
 <td align="left">int</td>
 <td align="left">Required yearly tuition fee for a local student to complete a year of an undergraduate engineering degree at the University. If the University doesn’t offer engineering degrees, the general tuition fee is indicated</td>
 </tr>
 <tr class="even">
-<td align="left">Masters Programme</td>
+<td align="left">masters_programme</td>
 <td align="left">y / n</td>
 <td align="left">Does the University offer Master’s programmes? (NOT only engineering)</td>
 </tr>
 <tr class="odd">
-<td align="left">Primary Teaching Language</td>
-<td align="left">string</td>
-<td align="left">Language in which the majority of teaching takes place</td>
-</tr>
-<tr class="even">
-<td align="left">Online Payment</td>
+<td align="left">online_payment</td>
 <td align="left">y / n</td>
 <td align="left">Is there a possibility to pay University fees online? (either banking information, instructions or a direct link)</td>
 </tr>
-<tr class="odd">
-<td align="left">Number of Students</td>
+<tr class="even">
+<td align="left">number_of_students</td>
 <td align="left">int</td>
 <td align="left">If stated on the website, the number of students studying at the University</td>
 </tr>
-<tr class="even">
-<td align="left">Access Date</td>
+<tr class="odd">
+<td align="left">access_date</td>
 <td align="left">date (dd.mm.yyyy)</td>
 <td align="left">Date the University website was accessed</td>
 </tr>
-<tr class="odd">
-<td align="left">Remarks</td>
+<tr class="even">
+<td align="left">remarks</td>
 <td align="left">string</td>
 <td align="left">Personal notes on the University</td>
 </tr>
-<tr class="even">
-<td align="left">Countries</td>
+</tbody>
+</table>
+<p>The <code>african_countries</code> data set has 7 variables and 55 observations. For an overview of the variable names, see the following table.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">african_countries</span></span></code></pre></div>
+<table class="table">
+<colgroup>
+<col width="6%">
+<col width="9%">
+<col width="84%">
+</colgroup>
+<thead><tr class="header">
+<th align="left">variable_name</th>
+<th align="left">variable_type</th>
+<th align="left">description</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="left">countries</td>
 <td align="left">string</td>
 <td align="left">Name of the Country</td>
 </tr>
-<tr class="odd">
-<td align="left">Region</td>
+<tr class="even">
+<td align="left">region</td>
 <td align="left">string</td>
 <td align="left">African Region where the Country is located</td>
 </tr>
+<tr class="odd">
+<td align="left">uni_count</td>
+<td align="left">int</td>
+<td align="left">Number of Universities in the corresponding country</td>
+</tr>
 <tr class="even">
-<td align="left">Best Uni Rank</td>
+<td align="left">best_uni_rank</td>
 <td align="left">int</td>
 <td align="left">Rank Africa of the best University of the country</td>
 </tr>
 <tr class="odd">
-<td align="left">GDP</td>
+<td align="left">gdp</td>
 <td align="left">int</td>
 <td align="left">GDP of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-$ in 2017 prices (accounting for differences in cost of living)</td>
 </tr>
 <tr class="even">
-<td align="left">GDP per Capita</td>
+<td align="left">gdp_per_capita</td>
 <td align="left">int</td>
 <td align="left">GDP per Capita of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-$ in 2017 prices (accounting for differences in cost of living)</td>
 </tr>
 <tr class="odd">
-<td align="left">HDI</td>
+<td align="left">hdi</td>
 <td align="left">double between 0 and 1</td>
 <td align="left">Human Development Index of the country in 2021. Source: ourworldindata.org, United Nations Development Programme (UNDP). Variable time span: 1990-2021. Higher number means better developped.</td>
 </tr>
@@ -298,143 +325,83 @@
 <div class="section level2">
 <h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
 </h2>
-<p>The provided code snippet showcases how to use the universityrankingafrica package in R to prepare a visual map highlighting the countries with the highest-ranked universities in Africa.</p>
-<p>The primary aim is to utilize the dataset’s “Rank Africa” column, which contains university rankings, to extract and display the distribution of top-ranked universities across African countries. The goal is to explore various aggregation methods to rank countries based on their universities’ rankings.</p>
 <div class="section level3">
-<h3 id="method-1">Method 1<a class="anchor" aria-label="anchor" href="#method-1"></a>
+<h3 id="id_1-mapping-countries-with-the-best-ranked-universities">1) Mapping Countries with the Best-Ranked Universities<a class="anchor" aria-label="anchor" href="#id_1-mapping-countries-with-the-best-ranked-universities"></a>
 </h3>
-<p>Our first try is to select the highest ranked university in each country and use only those to rank the countries.</p>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<p>The code below demonstrates how to create a map in R that highlights countries hosting the top-ranked universities. This method involves picking the best university in each country and associating its rank with that specific country.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">universityrankingafrica</span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://docs.ropensci.org/rnaturalearth/" class="external-link">rnaturalearth</a></span><span class="op">)</span></span>
 <span></span>
 <span></span>
-<span><span class="va">top_ranked_per_country</span> <span class="op">&lt;-</span> <span class="va">universityrankingafrica</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">University</span>, <span class="va">Country</span>, <span class="va">`Rank Africa`</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">Country</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">`Rank Africa`</span> <span class="op">==</span> <span class="fu"><a href="https://rdrr.io/r/base/Extremes.html" class="external-link">min</a></span><span class="op">(</span><span class="va">`Rank Africa`</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">ungroup</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="va">top_ranked_per_country</span> <span class="op">&lt;-</span> <span class="va">african_countries</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">countries</span>, <span class="va">best_uni_rank</span><span class="op">)</span> </span>
 <span></span>
 <span><span class="va">world</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://docs.ropensci.org/rnaturalearth/reference/ne_countries.html" class="external-link">ne_countries</a></span><span class="op">(</span>scale <span class="op">=</span> <span class="st">"medium"</span>, returnclass <span class="op">=</span> <span class="st">"sf"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">africa_map_1</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">left_join</a></span><span class="op">(</span><span class="va">world</span>, </span>
-<span>                        <span class="va">top_ranked_per_country</span>, by <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"name"</span> <span class="op">=</span> <span class="st">"Country"</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span>  </span>
+<span><span class="va">africa_map</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">left_join</a></span><span class="op">(</span><span class="va">world</span>, </span>
+<span>                        <span class="va">top_ranked_per_country</span>, by <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"name_long"</span> <span class="op">=</span> <span class="st">"countries"</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span>  </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Africa"</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">plot</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
 <span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_void</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">geom_sf</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">africa_map</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">`Rank Africa`</span><span class="op">)</span>, color <span class="op">=</span> <span class="st">"white"</span>, lwd <span class="op">=</span> <span class="fl">0</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_gradient.html" class="external-link">scale_fill_gradientn</a></span><span class="op">(</span>name <span class="op">=</span> <span class="st">"Rank Africa"</span>, </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">geom_sf</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">africa_map</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">best_uni_rank</span><span class="op">)</span>, color <span class="op">=</span> <span class="st">"white"</span>, lwd <span class="op">=</span> <span class="fl">0</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_gradient.html" class="external-link">scale_fill_gradientn</a></span><span class="op">(</span>name <span class="op">=</span>  <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"Rank Africa"</span>, <span class="st">"\n(out of 2'064)"</span><span class="op">)</span>, </span>
 <span>                       trans <span class="op">=</span> <span class="st">"log"</span>,</span>
 <span>                       labels <span class="op">=</span> <span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/label_number.html" class="external-link">label_number</a></span><span class="op">(</span>accuracy <span class="op">=</span> <span class="fl">1</span><span class="op">)</span>,</span>
 <span>                       colors <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"#2E8B57"</span>,<span class="st">"#9DBF9E"</span>, <span class="st">"#FCB97D"</span>, <span class="st">"#A84268"</span><span class="op">)</span>,</span>
-<span>                       na.value <span class="op">=</span> <span class="st">"grey80"</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Top-Ranked Universities in Africa"</span>, <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0.4</span><span class="op">)</span>, legend.direction <span class="op">=</span> <span class="st">"horizontal"</span>,</span>
-<span>        plot.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">20</span>, hjust <span class="op">=</span> <span class="fl">3</span>, vjust <span class="op">=</span> <span class="fl">0</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">plot</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-8-1.png" width="100%" style="display: block; margin: auto;"></p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsave.html" class="external-link">ggsave</a></span><span class="op">(</span><span class="st">"plot/africa_map_1.png"</span>, <span class="va">plot</span>, width <span class="op">=</span> <span class="fl">10</span>, height <span class="op">=</span> <span class="fl">8</span>, dpi <span class="op">=</span> <span class="fl">300</span><span class="op">)</span></span></code></pre></div>
+<span>                       na.value <span class="op">=</span> <span class="st">"grey80"</span>,</span>
+<span>                       guide <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/guide_colourbar.html" class="external-link">guide_colorbar</a></span><span class="op">(</span>title.position <span class="op">=</span> <span class="st">"top"</span>, title.vjust <span class="op">=</span> <span class="fl">1.5</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Top-Ranked Universities in Africa"</span>,</span>
+<span>       subtitle <span class="op">=</span> <span class="st">"Comparison of the Highest-Ranked University in each African Country"</span>,</span>
+<span>       caption <span class="op">=</span> <span class="st">"Source: Ranking Web of Universities (https://www.webometrics.info/en/Africa)"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">0.1</span>, <span class="fl">0.3</span><span class="op">)</span>, legend.direction <span class="op">=</span> <span class="st">"horizontal"</span>,</span>
+<span>        plot.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">20</span>, hjust <span class="op">=</span> <span class="fl">0</span>, vjust <span class="op">=</span> <span class="fl">0</span><span class="op">)</span>,</span>
+<span>        plot.subtitle <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">10</span>, hjust <span class="op">=</span> <span class="fl">0</span>, vjust <span class="op">=</span> <span class="fl">0.5</span><span class="op">)</span>,</span>
+<span>        plot.caption <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">10</span>, color <span class="op">=</span> <span class="st">"darkgray"</span>, hjust <span class="op">=</span> <span class="op">-</span><span class="fl">0.6</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">coord_sf</a></span><span class="op">(</span>ylim <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="op">-</span><span class="fl">40</span>, <span class="fl">40</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;"></p>
 </div>
 <div class="section level3">
-<h3 id="method-2">Method 2<a class="anchor" aria-label="anchor" href="#method-2"></a>
+<h3 id="id_2-exploring-colonials-legacy-on-african-university-ranking">2) Exploring Colonial’s Legacy on African University Ranking<a class="anchor" aria-label="anchor" href="#id_2-exploring-colonials-legacy-on-african-university-ranking"></a>
 </h3>
-<p>In this approach, we aim to expand the scope by considering the top two universities in each country. The process involves selecting the two highest-ranked universities within every country and then calculating the median of their rankings. This way, we obtain a broader perspective on educational excellence within each nation. This method allows for a more comprehensive evaluation compared to Method 1, providing a nuanced understanding of the educational landscape across Africa.</p>
+<p>This analysis investigates whether a correlation exists between the colonial power that previously governed African nations and their current university rankings.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">universityrankingafrica</span><span class="op">)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://docs.ropensci.org/rnaturalearth/" class="external-link">rnaturalearth</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://broom.tidymodels.org/" class="external-link">broom</a></span><span class="op">)</span></span>
 <span></span>
-<span><span class="co">#we only modify the way we're ranking the countries</span></span>
-<span><span class="va">top_2_ranked_per_country</span> <span class="op">&lt;-</span> <span class="va">universityrankingafrica</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">University</span>, <span class="va">Country</span>, <span class="va">`Rank Africa`</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">Country</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/slice.html" class="external-link">slice_head</a></span><span class="op">(</span>n <span class="op">=</span> <span class="fl">2</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">ungroup</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">Country</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarize</a></span><span class="op">(</span>Avg_Rank <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/median.html" class="external-link">median</a></span><span class="op">(</span><span class="va">`Rank Africa`</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">ungroup</a></span><span class="op">(</span><span class="op">)</span></span>
+<span><span class="va">data</span> <span class="op">&lt;-</span> <span class="va">ranking</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">colonial_power</span> <span class="op"><a href="https://rdrr.io/r/base/match.html" class="external-link">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"United Kingdom"</span>, <span class="st">"France"</span>, <span class="st">"Belgium"</span>, <span class="st">"Italy"</span>, <span class="st">"Portugal"</span><span class="op">)</span><span class="op">)</span></span>
 <span></span>
-<span><span class="va">world</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://docs.ropensci.org/rnaturalearth/reference/ne_countries.html" class="external-link">ne_countries</a></span><span class="op">(</span>scale <span class="op">=</span> <span class="st">"medium"</span>, returnclass <span class="op">=</span> <span class="st">"sf"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">africa_map_2</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">left_join</a></span><span class="op">(</span><span class="va">world</span>, </span>
-<span>                        <span class="va">top_2_ranked_per_country</span>, by <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"name"</span> <span class="op">=</span> <span class="st">"Country"</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span>  </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Africa"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">plot</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_void</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">geom_sf</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">africa_map_2</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">`Avg_Rank`</span><span class="op">)</span>, color <span class="op">=</span> <span class="st">"white"</span>, lwd <span class="op">=</span> <span class="fl">0</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_gradient.html" class="external-link">scale_fill_gradientn</a></span><span class="op">(</span>name <span class="op">=</span> <span class="st">"Rank Africa"</span>, </span>
-<span>                       trans <span class="op">=</span> <span class="st">"log"</span>,</span>
-<span>                       labels <span class="op">=</span> <span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/label_number.html" class="external-link">label_number</a></span><span class="op">(</span>accuracy <span class="op">=</span> <span class="fl">1</span><span class="op">)</span>,</span>
-<span>                       colors <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"#2E8B57"</span>,<span class="st">"#9DBF9E"</span>, <span class="st">"#FCB97D"</span>, <span class="st">"#A84268"</span><span class="op">)</span>,</span>
-<span>                       na.value <span class="op">=</span> <span class="st">"grey80"</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Top-Ranked Universities in Africa"</span>, <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0.4</span><span class="op">)</span>, legend.direction <span class="op">=</span> <span class="st">"horizontal"</span>,</span>
-<span>        plot.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">20</span>, hjust <span class="op">=</span> <span class="fl">3</span>, vjust <span class="op">=</span> <span class="fl">0</span><span class="op">)</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="va">plot</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-9-1.png" width="100%" style="display: block; margin: auto;"></p>
+<span><span class="co"># Create a scatter plot</span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">data</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">colonial_power</span>, y <span class="op">=</span> <span class="va">rank_africa</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="st">"Colonial Power at Independence"</span>, y <span class="op">=</span> <span class="st">"Africa Rank"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">ggtitle</a></span><span class="op">(</span><span class="st">"University Ranking in Africa vs Colonial Power at Independence"</span><span class="op">)</span></span></code></pre></div>
+<p><img src="reference/figures/README-unnamed-chunk-12-1.png" width="100%" style="display: block; margin: auto;"></p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsave.html" class="external-link">ggsave</a></span><span class="op">(</span><span class="st">"plot/africa_map_2.png"</span>, <span class="va">plot</span>, width <span class="op">=</span> <span class="fl">10</span>, height <span class="op">=</span> <span class="fl">8</span>, dpi <span class="op">=</span> <span class="fl">300</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span></span>
+<span><span class="co"># Perform linear regression</span></span>
+<span><span class="va">model</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/stats/lm.html" class="external-link">lm</a></span><span class="op">(</span><span class="va">rank_africa</span> <span class="op">~</span> <span class="va">colonial_power</span>, data <span class="op">=</span> <span class="va">data</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="https://generics.r-lib.org/reference/tidy.html" class="external-link">tidy</a></span><span class="op">(</span><span class="va">model</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co">#&gt; # A tibble: 5 × 5</span></span>
+<span><span class="co">#&gt;   term                         estimate std.error statistic p.value</span></span>
+<span><span class="co">#&gt;   &lt;chr&gt;                           &lt;dbl&gt;     &lt;dbl&gt;     &lt;dbl&gt;   &lt;dbl&gt;</span></span>
+<span><span class="co">#&gt; 1 (Intercept)                     449.       168.     2.68  0.00834</span></span>
+<span><span class="co">#&gt; 2 colonial_powerFrance            201.       182.     1.11  0.271  </span></span>
+<span><span class="co">#&gt; 3 colonial_powerItaly            -302.       335.    -0.900 0.370  </span></span>
+<span><span class="co">#&gt; 4 colonial_powerPortugal           80.3      237.     0.339 0.735  </span></span>
+<span><span class="co">#&gt; 5 colonial_powerUnited Kingdom   -117.       181.    -0.646 0.519</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/print.html" class="external-link">print</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">model</span><span class="op">)</span><span class="op">$</span><span class="va">r.squared</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] 0.0895955</span></span></code></pre></div>
+<div class="section level4">
+<h4 id="interpretation">Interpretation<a class="anchor" aria-label="anchor" href="#interpretation"></a>
+</h4>
+<p>The model doesn’t provide strong evidence that the specific colonial powers (France, Italy, Portugal, United Kingdom) significantly predict the university rankings in Africa based on their p-values which are greater than conventional thresholds like 0.05.. The low R-squared value indicates that the model might not explain much of the variability in the university rankings, suggesting that factors beyond colonial power might influence these rankings significantly.</p>
 </div>
-<div class="section level3">
-<h3 id="method-3">Method 3<a class="anchor" aria-label="anchor" href="#method-3"></a>
-</h3>
-<p>Method 3 takes a more inclusive stance by considering all the universities within each country. Instead of focusing solely on the top-performing institutions, this approach involves aggregating the rankings of all universities in a country and computing their median. This method offers a holistic view of the educational standards within each country. It provides a comprehensive ranking that considers the collective performance of universities, which may offer insights differing from the more selective approaches of Method 1 and Method 2.</p>
-<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">universityrankingafrica</span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org" class="external-link">tidyverse</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://docs.ropensci.org/rnaturalearth/" class="external-link">rnaturalearth</a></span><span class="op">)</span></span>
-<span></span>
-<span><span class="co">#we only modify the way we're ranking the countries</span></span>
-<span><span class="va">all_ranked_per_country</span> <span class="op">&lt;-</span> <span class="va">universityrankingafrica</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html" class="external-link">select</a></span><span class="op">(</span><span class="va">University</span>, <span class="va">Country</span>, <span class="va">`Rank Africa`</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">Country</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarize</a></span><span class="op">(</span>Avg_Rank <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/median.html" class="external-link">median</a></span><span class="op">(</span><span class="va">`Rank Africa`</span><span class="op">)</span>, .groups <span class="op">=</span> <span class="st">"drop"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">world</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://docs.ropensci.org/rnaturalearth/reference/ne_countries.html" class="external-link">ne_countries</a></span><span class="op">(</span>scale <span class="op">=</span> <span class="st">"medium"</span>, returnclass <span class="op">=</span> <span class="st">"sf"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">africa_map_3</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate-joins.html" class="external-link">left_join</a></span><span class="op">(</span><span class="va">world</span>, </span>
-<span>                        <span class="va">all_ranked_per_country</span>, by <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"name"</span> <span class="op">=</span> <span class="st">"Country"</span><span class="op">)</span><span class="op">)</span> <span class="op">|&gt;</span>  </span>
-<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">continent</span> <span class="op">==</span> <span class="st">"Africa"</span><span class="op">)</span></span>
-<span></span>
-<span><span class="va">plot</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_void</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">geom_sf</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">africa_map_3</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">`Avg_Rank`</span><span class="op">)</span>, color <span class="op">=</span> <span class="st">"white"</span>, lwd <span class="op">=</span> <span class="fl">0</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_gradient.html" class="external-link">scale_fill_gradientn</a></span><span class="op">(</span>name <span class="op">=</span> <span class="st">"Rank Africa"</span>, </span>
-<span>                       trans <span class="op">=</span> <span class="st">"log"</span>,</span>
-<span>                       labels <span class="op">=</span> <span class="fu">scales</span><span class="fu">::</span><span class="fu"><a href="https://scales.r-lib.org/reference/label_number.html" class="external-link">label_number</a></span><span class="op">(</span>accuracy <span class="op">=</span> <span class="fl">1</span><span class="op">)</span>,</span>
-<span>                       colors <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"#2E8B57"</span>,<span class="st">"#9DBF9E"</span>, <span class="st">"#FCB97D"</span>, <span class="st">"#A84268"</span><span class="op">)</span>,</span>
-<span>                       na.value <span class="op">=</span> <span class="st">"grey80"</span><span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>title <span class="op">=</span> <span class="st">"Top-Ranked Universities in Africa"</span>, <span class="op">)</span> <span class="op">+</span></span>
-<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0.4</span><span class="op">)</span>, legend.direction <span class="op">=</span> <span class="st">"horizontal"</span>,</span>
-<span>        plot.title <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">20</span>, hjust <span class="op">=</span> <span class="fl">3</span>, vjust <span class="op">=</span> <span class="fl">0</span><span class="op">)</span>,</span>
-<span>        plot.margin <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">margin</a></span><span class="op">(</span><span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">0</span>, <span class="fl">0</span>, unit <span class="op">=</span> <span class="st">"cm"</span><span class="op">)</span> <span class="op">)</span></span>
-<span></span>
-<span><span class="va">plot</span></span></code></pre></div>
-<p><img src="reference/figures/README-unnamed-chunk-10-1.png" width="100%" style="display: block; margin: auto;"></p>
-<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsave.html" class="external-link">ggsave</a></span><span class="op">(</span><span class="st">"plot/africa_map_3.png"</span>, <span class="va">plot</span>, width <span class="op">=</span> <span class="fl">10</span>, height <span class="op">=</span> <span class="fl">8</span>, dpi <span class="op">=</span> <span class="fl">300</span><span class="op">)</span></span></code></pre></div>
-</div>
-<div class="section level3">
-<h3 id="conclusion">Conclusion<a class="anchor" aria-label="anchor" href="#conclusion"></a>
-</h3>
-<p><strong>Method 1</strong> - Top-Ranked Universities per Country:</p>
-<p>Focuses on the single highest-ranked university in each country, offering a clear snapshot of top performers but potentially overlooking the broader educational landscape.</p>
-<p><strong>Method 2</strong> - Top Two Universities per Country:</p>
-<p>Considers the top two universities, providing a slightly broader perspective while maintaining selectivity. Offers a nuanced view without overwhelming details.</p>
-<p><strong>Method 3</strong> - All Universities per Country:</p>
-<p>Takes an inclusive approach by considering all universities, offering a comprehensive but potentially diluted view of educational standards.</p>
-<p>Each method has its merits: Method 1 offers clarity, Method 2 balances selectivity and breadth, while Method 3 provides inclusivity but may sacrifice precision. Choosing the appropriate method depends on the specific objectives and the desired depth of understanding for evaluating educational excellence across African countries.</p>
-<p><img src="reference/figures/README-unnamed-chunk-11-1.png" width="100%" style="display: block; margin: auto;"></p>
 </div>
 </div>
 <div class="section level2">
@@ -446,7 +413,7 @@
 <h2 id="citation">Citation<a class="anchor" aria-label="anchor" href="#citation"></a>
 </h2>
 <p>To cite this package, please use:</p>
-<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/citation.html" class="external-link">citation</a></span><span class="op">(</span><span class="st">"universityrankingafrica"</span><span class="op">)</span></span>
 <span><span class="co">#&gt; Um Paket 'universityrankingafrica' in Publikationen zu zitieren, nutzen</span></span>
 <span><span class="co">#&gt; Sie bitte:</span></span>
@@ -460,7 +427,7 @@
 <span><span class="co">#&gt;     title = {universityrankingafrica: University Ranking Africa},</span></span>
 <span><span class="co">#&gt;     author = {Samuel Sigrist and Sophia Skorik},</span></span>
 <span><span class="co">#&gt;     year = {2023},</span></span>
-<span><span class="co">#&gt;     abstract = {What the package does (one paragraph).},</span></span>
+<span><span class="co">#&gt;     abstract = {Data from institutional and national levels was combined into a dataset to provide a comprehensive characterization of the top ranked Universities of every African country. This was done to demonstrate the correlation of certain attributes with the academic ranking performance. The dataset also highlights the difficulties of accessing data from many African Universities online.},</span></span>
 <span><span class="co">#&gt;     version = {0.0.0.9000},</span></span>
 <span><span class="co">#&gt;   }</span></span></code></pre></div>
 </div>
@@ -469,7 +436,7 @@
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li><a href="LICENSE.html">Full license</a></li>
-<li><small>CC0</small></li>
+<li><small><a href="https://creativecommons.org/licenses/by/4.0" class="external-link">CC BY 4.0</a></small></li>
 </ul>
 </div>
 
