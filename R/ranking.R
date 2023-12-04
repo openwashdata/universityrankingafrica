@@ -1,11 +1,8 @@
-#
 #' University Ranking Africa
-#'
 #'
 #' Database of African Top Universities and observations of their rankings, type of courses, application process, part of international students and website funtions.
 #'
 #' @format A tibble with 141 rows and 26 variables:
-
 #' \describe{
 #'   \item{university}{Name of the University}
 #'   \item{country}{Country where the University is located}
@@ -34,3 +31,4 @@
 #'   \item{access_date}{Date the University website was accessed}
 #'   \item{remarks}{Personal notes on the University}
 #' }
+'ranking'
