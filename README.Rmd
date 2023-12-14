@@ -26,6 +26,7 @@ library(rnaturalearth)
 # universityrankingafrica
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/openwashdata/universityrankingafrica/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/universityrankingafrica/actions/workflows/R-CMD-check.yaml)
 [![DOI](https://zenodo.org/badge/727290847.svg)](https://zenodo.org/doi/10.5281/zenodo.10284864)
 <!-- badges: end -->
 

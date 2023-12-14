@@ -6,6 +6,7 @@
 <!-- badges: start -->
 
 [![DOI](https://zenodo.org/badge/727290847.svg)](https://zenodo.org/doi/10.5281/zenodo.10284864)
+[![R-CMD-check](https://github.com/openwashdata/universityrankingafrica/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/universityrankingafrica/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This packages combines data collected as part of an MSc. Thesis Project.
