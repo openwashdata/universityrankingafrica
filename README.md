@@ -253,6 +253,6 @@ citation("universityrankingafrica")
 #>     url = {https://github.com/openwashdata/universityrankingafrica},
 #>     abstract = {Data from institutional and national levels was combined into a dataset to provide a comprehensive characterization of the top ranked Universities of every African country. This was done to demonstrate the correlation of certain attributes with the academic ranking performance. The dataset also highlights the difficulties of accessing data from many African Universities online.},
 #>     keywords = {open data,washdata,universities,higher education,university rankings,Africa,africa,openwashdata,r,university-ranking},
-#>     version = {0.0.0.9000},
+#>     version = {0.0.2},
 #>   }
 ```

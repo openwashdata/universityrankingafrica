@@ -8,7 +8,7 @@ message: 'To cite package "universityrankingafrica" in publications use:'
 type: dataset
 license: CC-BY-4.0
 title: 'universityrankingafrica: University Ranking Africa'
-version: 0.0.0.9000
+version: 0.0.2
 doi: 10.5281/zenodo.10284864
 abstract: Data from institutional and national levels was combined into a dataset
   to provide a comprehensive characterization of the top ranked Universities of every
