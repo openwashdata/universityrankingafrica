@@ -29,6 +29,6 @@ data,african_countries.rda,countries,string,Name of the Country
 data,african_countries.rda,region,string,African Region where the Country is located
 data,african_countries.rda,uni_count,int,Number of Universities in the corresponding country
 data,african_countries.rda,best_uni_rank,int,Rank Africa of the best University of the country
-data,african_countries.rda,gdp,int,GDP of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-$ in 2017 prices (accounting for differences in cost of living)
-data,african_countries.rda,gdp_per_capita,int,GDP per Capita of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-$ in 2017 prices (accounting for differences in cost of living)
-data,african_countries.rda,hdi,double between 0 and 1,Human Development Index of the country in 2021. Source: ourworldindata.org, United Nations Development Programme (UNDP). Variable time span: 1990-2021. Higher number means better developped.
+data,african_countries.rda,gdp,int,"GDP of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-$ in 2017 prices (accounting for differences in cost of living)"
+data,african_countries.rda,gdp_per_capita,int,"GDP per Capita of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-$ in 2017 prices (accounting for differences in cost of living)"
+data,african_countries.rda,hdi,double between 0 and 1,"Human Development Index of the country in 2021. Source: ourworldindata.org, United Nations Development Programme (UNDP). Variable time span: 1990-2021. Higher number means better developped."
