@@ -1,10 +1,10 @@
-url: https://github.com/openwashdata/universityrankingafrica/blob/main/_pkgdown.yml
+url: https://openwashdata.github.io/universityrankingafrica/
 
 template:
   bootstrap: 5
   includes:
     in_header: |
-      <script defer data-domain="openwashdata.github.io/" src="https://plausible.io/js/script.js"></script>
+      <script defer data-domain="openwashdata.github.io" src="https://plausible.io/js/script.js"></script>
 
 home:
   links:
