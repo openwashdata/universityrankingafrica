@@ -4,22 +4,24 @@
 
 - **Samuel Sigrist**. Author. [](https://orcid.org/0000-0003-4697-3329)
 
-- **Sophia Skorik**. Author, maintainer.
-  [](https://orcid.org/0009-0001-4755-1649)
+- **Sophia Skorik**. Author. [](https://orcid.org/0009-0001-4755-1649)
+
+- **Lars Schöbitz**. Maintainer.
+  [](https://orcid.org/0000-0003-2196-5015)
 
 ## Citation
 
 Source:
 [`inst/CITATION`](https://github.com/openwashdata/universityrankingafrica/blob/main/inst/CITATION)
 
-Sigrist S, Skorik S (2026). “universityrankingafrica: University Ranking
-Africa.”
+Sigrist S, Skorik S, Schöbitz L (2026). “universityrankingafrica:
+University Ranking Africa.”
 [doi:10.5281/zenodo.10284864](https://doi.org/10.5281/zenodo.10284864).
 <https://github.com/openwashdata/universityrankingafrica>.
 
     @Misc{sigrist_etall:2026,
       title = {universityrankingafrica: University Ranking Africa},
-      author = {Samuel Sigrist and Sophia Skorik},
+      author = {Samuel Sigrist and Sophia Skorik and Lars Schöbitz},
       year = {2026},
       doi = {10.5281/zenodo.10284864},
       url = {https://github.com/openwashdata/universityrankingafrica},
