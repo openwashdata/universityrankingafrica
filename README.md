@@ -125,8 +125,8 @@ african_countries
 | region | string | African Region where the Country is located |
 | uni_count | int | Number of Universities in the corresponding country |
 | best_uni_rank | int | Rank Africa of the best University of the country |
-| gdp | int | GDP of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-\$ in 2017 prices (accounting for differences in cost of living) |
-| gdp_per_capita | int | GDP per Capita of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international-\$ in 2017 prices (accounting for differences in cost of living) |
+| gdp | int | GDP of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international dollars in 2017 prices (accounting for differences in cost of living) |
+| gdp_per_capita | int | GDP per Capita of the country in 2021 (With a few exceptions for which the data is older). Source: ourworldindata.org, World Bank, international dollars in 2017 prices (accounting for differences in cost of living) |
 | hdi | double between 0 and 1 | Human Development Index of the country in 2021. Source: ourworldindata.org, United Nations Development Programme (UNDP). Variable time span: 1990-2021. Higher number means better developped. |
 
 ## Example
@@ -238,8 +238,8 @@ To cite this package, please use:
 citation("universityrankingafrica")
 #> To cite package 'universityrankingafrica' in publications use:
 #> 
-#>   Sigrist S, Skorik S (2026). "universityrankingafrica: University
-#>   Ranking Africa." doi:10.5281/zenodo.10284864
+#>   Sigrist S, Skorik S, Schöbitz L (2026). "universityrankingafrica:
+#>   University Ranking Africa." doi:10.5281/zenodo.10284864
 #>   <https://doi.org/10.5281/zenodo.10284864>.
 #>   <https://github.com/openwashdata/universityrankingafrica>.
 #> 
@@ -247,7 +247,7 @@ citation("universityrankingafrica")
 #> 
 #>   @Misc{sigrist_etall:2026,
 #>     title = {universityrankingafrica: University Ranking Africa},
-#>     author = {Samuel Sigrist and Sophia Skorik},
+#>     author = {Samuel Sigrist and Sophia Skorik and Lars Schöbitz},
 #>     year = {2026},
 #>     doi = {10.5281/zenodo.10284864},
 #>     url = {https://github.com/openwashdata/universityrankingafrica},
