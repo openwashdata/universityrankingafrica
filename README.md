@@ -10,6 +10,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10284864.svg)](https://zenodo.org/doi/10.5281/zenodo.10284864)
 <!-- badges: end -->
 
+A data package published by [openwashdata](https://openwashdata.org).
+
 This packages combines data collected as part of an MSc. Thesis Project.
 The goal of this project was to build an openly accessible database with
 data from the top ranked universities of each African country. The
