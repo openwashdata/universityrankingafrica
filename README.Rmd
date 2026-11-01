@@ -23,15 +23,13 @@ library(sf)
 library(rnaturalearth)
 ```
 
-# universityrankingafrica
+# universityrankingafrica <a href="https://openwashdata.org"><img src="man/figures/logo.png" align="right" width="120" alt="openwashdata" /></a>
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/openwashdata/universityrankingafrica/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/universityrankingafrica/actions/workflows/R-CMD-check.yaml)
 [![DOI](https://zenodo.org/badge/727290847.svg)](https://zenodo.org/doi/10.5281/zenodo.10284864)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10284864.svg)](https://zenodo.org/doi/10.5281/zenodo.10284864)
 <!-- badges: end -->
-
-A data package published by [openwashdata](https://openwashdata.org).
 
 This packages combines data collected as part of an MSc. Thesis Project. The goal of this project was to build an openly accessible database with data from the top ranked universities of each African country. The project is supported by the Global Health Engineering group at ETH Zurich, Switzerland.
 
@@ -221,6 +219,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/universityrankingafrica/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 To cite this package, please use:
 
